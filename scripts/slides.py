@@ -95,3 +95,19 @@ def render(htmls, outdir, contact=True):
             sheet.paste(im, ((i % cols) * 360, (i // cols) * 450))
         sheet.save("/tmp/contact.png")
     return paths
+
+
+def cover_photo(bg, tag, title, sub, title_px=118):
+    """写真の背景(assets/covers/*.png など)に、タイトル文字を重ねた表紙。bg はリポジトリからの相対パス。"""
+    import base64
+    data = (ROOT / bg).read_bytes()
+    uri = "data:image/png;base64," + base64.b64encode(data).decode()
+    return f'''<!DOCTYPE html><html><head><meta charset="utf-8"><style>{CSS}
+.bg{{position:absolute;inset:0;background:url({uri}) center/cover no-repeat}}
+.shade{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,14,30,.92) 0%,rgba(4,14,30,.75) 38%,rgba(4,14,30,0) 62%,rgba(4,14,30,.55) 100%)}}
+h1{{position:absolute;top:200px;left:80px;right:80px;font-size:{title_px}px;font-weight:900;line-height:1.08;text-shadow:0 4px 24px rgba(0,0,0,.6)}}
+.bar{{position:absolute;top:{200+int(title_px*1.08*2)+30}px;left:84px;width:160px;height:10px;background:#ffc400}}
+.sub{{position:absolute;top:{200+int(title_px*1.08*2)+70}px;left:84px;right:80px;font-size:44px;font-weight:700;color:#e6f0ff;text-shadow:0 2px 12px rgba(0,0,0,.7)}}
+.foot{{position:absolute;bottom:56px;left:80px;font-size:30px;color:#cfe3ff;text-shadow:0 2px 8px rgba(0,0,0,.8)}}
+</style></head><body><div class="bg"></div><div class="shade"></div><div class="tag">{tag}</div>
+<h1>{title}</h1><div class="bar"></div><div class="sub">{sub}</div><div class="foot">近畿4場をデータで読む</div></body></html>'''
