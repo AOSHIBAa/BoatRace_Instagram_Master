@@ -35,15 +35,24 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
    - `data/posts_log.csv` の直近7日と同じネタは避ける。今月の予約が上限に近ければ投稿しない日にしてよい。
 4. 画像を作る:`scripts/slides.py` の部品で 5〜7 枚。1枚目の表紙は次のとおり。
    - `handoff/images/今日の日付/cover.png` があれば Read で必ず目で見て確認する。**競艇の艇に見える**(屋根のない艇、選手がひざをついて乗る、船外機)、**文字・数字・ロゴがない**、の両方を満たせば `cover_photo("handoff/images/今日/cover.png", ...)` を使う。
-   - なければ、または条件を満たさなければ `cover()`(図形の表紙)を使い、ユーザーへの連絡で理由を一言書く。
+   - なければ `git pull` してもう一度確認する。それでもなければ、下の「Codex への画像依頼」を今日の日付で行い(依頼書 `handoff/requests/今日.md` がなければ先に作ってpush)、最大12分、2分ごとに `git pull` して待つ。
+   - それでも届かない、または条件を満たさなければ `cover()`(図形の表紙)を使い、ユーザーへの連絡で理由を一言書く。
    2枚目以降は図とデータ。最後は「まとめ」+ `DISCLAIMER`。各ページの `src` に出典と集計期間を書く。保存先は `images/posts/YYYY-MM-DD-短い英語名/`。
 5. `/tmp/contact.png` を Read で必ず目視し、文字のはみ出し・重なり・空白の崩れを直す。
 6. **レビュー**:別のエージェント(Agent ツール)に、画像の数字と `motors.json`・CSV の数字の突き合わせ、誤字、選手名・号機の取り違え、誇大表現(「必勝」「稼げる」「確実」など)や「AI」「Claude」の文言が入っていないかを確認させ、指摘を直す。
 7. `python3 scripts/make_reel.py images/posts/<フォルダ> 4` で、画像から縦長のリール動画 `reel.mp4`(1枚4秒)を作る。動画の最初のフレームを Read で確認する。
 8. 画像と動画をコミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` の `reel.mp4` を Metricool の `createScheduledPost` に渡す(`media` に動画のURL1つ、`instagramData.type` は `REEL`(4本に1本は `TRIAL_REEL`)、`showReelOnFeed: true`、`videoThumbnailUrl` に1枚目 s1.png のURL、`draft: true`、`autoPublish: true`)。公開予定はその日の 19:00〜21:00(ユーザーが確認する時間を残すため、作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。動画は無音なので、キャプションの1行目で中身が分かるようにする。
 9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」か「お試しリール」)してコミット。
-10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。Codex が翌朝10時台にこれを読んで画像を作る。
+10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。続けて下の「Codex への画像依頼」を翌日の日付で行う(数分で main に `handoff/images/翌日/cover.png` が届く。届いたかの確認は翌日の手順4でよい)。
 11. ユーザーに、ネタ・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
+
+## Codex への画像依頼(GitHub の @codex)
+- Issue #1 にコメントする(日付 D は依頼する日):
+```
+gh api -X POST repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments -f body="@codex handoff/requests/D.md の指示どおりに、組み込みの画像生成ツールで表紙画像を1枚生成し、handoff/images/D/cover.png として保存し、同じフォルダに report.json(使ったプロンプト、画像サイズ、確認結果)を書いてください。画像内に文字・数字・ロゴ・旗は一切入れないこと。その2ファイルだけをコミットし、git pull --rebase origin main のあと git push origin HEAD:main を実行してください。pushに失敗したら、トークン部分を伏せた git remote -v とエラー文を返信に書いてください。"
+```
+- Codex は数分で返信し、自分で main に push する。返信に push 失敗が書かれていたら、その内容をユーザーへの連絡に一言入れる(同じ日に依頼し直すのは1回まで)。
+- 同じ日付の cover.png がすでに main にあれば依頼しない。
 
 ## 書き方のルール
 - 数字は必ずデータから計算したものだけ。推測の数字は書かない。
