@@ -1,0 +1,9 @@
+{
+  "codex_has_builtin_imagegen": true,
+  "tool_name": "image_gen.imagegen",
+  "image_size_px": "1122x1402",
+  "png_bytes": 2248290,
+  "used_any_api_key": false,
+  "can_push_to_main_directly": true,
+  "errors": ""
+}
