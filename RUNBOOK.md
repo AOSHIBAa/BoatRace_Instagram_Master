@@ -50,7 +50,7 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
 8. **下書きのアップロード**:リールなら `python3 scripts/make_reel.py <フォルダ> 4` で `reel.mp4` を作り、最初のフレームを Read で確認する。コミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` を Metricool の `createScheduledPost` に渡す。
    - リール:`media` に `reel.mp4` のURL1つ、`instagramData.type` は `REEL`(4本に1本は `TRIAL_REEL`)、`showReelOnFeed: true`、`videoThumbnailUrl` に s1.png のURL。
    - 通常の投稿:`media` に s1.png〜sN.png のURLを順番に、`instagramData.type: POST`。
-   - どちらも `draft: true`、`autoPublish: true`。公開予定はその日の 19:00〜21:00(作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。リールは無音なので、キャプションの1行目で中身が分かるようにする。
+   - どちらも `draft: true`、`autoPublish: false`(公開時刻に Metricool アプリへ通知が届き、ユーザーが Instagram アプリで音楽を付けて公開する。ユーザーの方針)。公開予定はその日の 19:00〜21:00(作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。リールは無音なので、キャプションの1行目で中身が分かるようにする。
 9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」「お試しリール」「投稿」のどれか)してコミット。
 10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。続けて下の「Codex への表紙写真の依頼」を翌日の日付で行う(数分で main に `handoff/images/翌日/cover.png` が届く。届いたかの確認は翌日の手順4でよい)。
 11. ユーザーに、ネタ・形式と枚数・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
