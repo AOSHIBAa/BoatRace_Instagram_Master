@@ -26,5 +26,5 @@
       "attempts": 3
     }
   ],
-  "notes": "Built-in image generation used for all slides. Visual character-by-character review found s1-s4 matched the required text. s5 was regenerated three times, but the generator rendered the required Japanese middle dot ・ as a round bullet • at the start of T4-T7 and between the two entries in T5; the third attempt is saved. All other visible s5 text matched. No further attempt was made because the maximum of 3 attempts per slide was reached."
+  "notes": "Built-in image generation used for all slides. s2 and s3 were regenerated once each to correct the bottom footnote. Visual review confirmed both corrected footnotes read exactly: BOAT RACE公式の競走成績・番組表(2026/7/7〜11/4)を独自に集計。展示タイムはレース内の平均との差. Other slides were not changed. Previous review results for s1, s4, and s5 remain as recorded; s5 reached the three-attempt maximum with the noted middle-dot rendering issue."
 }
