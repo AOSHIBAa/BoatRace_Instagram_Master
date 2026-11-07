@@ -1,10 +1,15 @@
 {
   "date": "2026-11-08",
-  "attempts": 2,
-  "image_size_px": "",
-  "png_bytes": 0,
+  "attempts": 1,
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical social media cover image\nPrimary request: Photorealistic vertical 4:5 image (1080x1350 or closest). Japanese-style kyotei motorboat racing at night under bright stadium floodlights, with city lights blurred far in the background and calm dark water.\nSubject: A single-seat kyotei racing boat about 3 m long, flat, low, and long relative to the racer, with a light-colored white or pale-grey hull. It has an OPEN cockpit with absolutely no canopy, roof, or windshield bubble. The racer crouches or kneels low in the open cockpit, leaning forward, both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit; face not visible. One outboard motor on the stern produces a large white spray plume. The boat banks into a tight left turn around one orange-and-white cylindrical turn buoy, with spray curving outward.\nComposition/framing: Vertical 4:5. Boat entirely in the lower half. Keep the top 45% dark, empty, uncluttered negative space for a later title overlay.\nLighting/mood: Dramatic night race, bright stadium floodlights, realistic reflections and spray, distant city bokeh.\nConstraints: Must unmistakably look like a Japanese kyotei racing boat, not an offshore powerboat and not an F1 tunnel boat. No recognizable real person.\nAvoid: Absolutely no text, letters, numbers, logos, branding, watermarks, signage, number plates, flags, emblems, or typographic marks anywhere in the image, including on boat, clothing, helmet, buoy, background, and structures.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 2217720,
   "looks_like_kyotei_boat": true,
   "has_text_or_logo": false,
-  "ran_in_environment": "ChatGPT automation runtime (GitHub connector; image generation tool), not Codex cloud",
-  "errors": "Both generated images failed the mandatory brief: landscape daytime rather than vertical 4:5 night race; bow flag present; upper 45% not empty. No compliant cover.png committed. Binary PNG GitHub upload capability unavailable in connector."
+  "has_numbers": false,
+  "has_flags": false,
+  "top_45_percent_dark_and_uncluttered": true,
+  "verification": "Visual inspection passed: open-cockpit single-seat kyotei boat, crouched racer, stern outboard, curved spray, cylindrical turn buoy, dark upper negative space; no text, numbers, logos, watermarks, signage, number plates, or flags observed.",
+  "ran_in_environment": "codex cloud",
+  "errors": ""
 }
