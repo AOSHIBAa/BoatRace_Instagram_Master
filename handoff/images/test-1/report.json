@@ -1,0 +1,9 @@
+{
+  "ran_unattended": true,
+  "imagegen_available_in_task": true,
+  "image_size_px": "1122x1402",
+  "png_bytes": 2369820,
+  "commit_url": "",
+  "approval_was_required": false,
+  "errors": "Image generation succeeded and the local PNG was verified (2369820 bytes, 1122x1402, valid PNG signature). Could not commit cover.png: the generated PNG is in the image-generation/container filesystem, but the GitHub connector accepts binary data only as a base64 string and the available tool environment provides no binary handoff from that filesystem into the connector. No image commit was attempted; cover.png is not in the repository."
+}
