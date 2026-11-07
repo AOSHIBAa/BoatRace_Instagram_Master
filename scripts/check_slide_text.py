@@ -11,9 +11,14 @@ Exit 0 if all match, 1 otherwise. Prints a table of mismatches.
 import json, sys
 
 
+# glyphs that look and mean the same on a slide (bullet dots only)
+SAME = {"•": "・", "･": "・", "·": "・"}
+
+
 def norm(s):
     # join wrapped lines; keep inner spaces
-    return "".join(line.strip() for line in str(s).splitlines())
+    t = "".join(line.strip() for line in str(s).splitlines())
+    return "".join(SAME.get(c, c) for c in t)
 
 
 def main():

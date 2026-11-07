@@ -56,7 +56,7 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
 11. ユーザーに、ネタ・形式と枚数・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
 
 ## Codex への依頼(GitHub の @codex)
-どれも Issue #1 にコメントする。Codex の返信が「usage limits」(利用上限)なら、待たずにその日は Codex を使わず、表紙は `cover()`、スライドは `scripts/slides.py` で作り、ユーザーへの連絡に「Codexの利用上限のため」と一言書く。`gh api -X POST repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments -f body="..."`。Codex は数分で Issue に返信する。返信に push の失敗が書かれていたら、内容をユーザーへの連絡に一言入れる。
+どれも Issue #1 にコメントする。Codex の返信が「usage limits」(利用上限)なら、待たずにその日は Codex を使わず、表紙は `cover()`、スライドは `scripts/slides.py` で作り、ユーザーへの連絡に「Codexの利用上限のため」と一言書く。`gh api -X POST repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments -f body="..."`。Codex は数分で Issue に返信する。コメントは多いので、最新の返信は必ず `gh api "repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments?per_page=100" -q '.[-1]'` で取る(per_page なしだと古いページが返る。100件を超えたら新しい Issue を作り、この手順書の番号を書き換える)。返信に push の失敗が書かれていたら、内容をユーザーへの連絡に一言入れる。
 
 **表紙写真の依頼**(日付 D。同じ日付の cover.png がすでに main にあれば依頼しない)
 ```
