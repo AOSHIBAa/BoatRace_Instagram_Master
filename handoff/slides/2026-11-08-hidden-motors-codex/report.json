@@ -1,0 +1,30 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    }
+  ],
+  "notes": "Built-in image generation used for all slides. Visual character-by-character review found s1-s4 matched the required text. s5 was regenerated three times, but the generator rendered the required Japanese middle dot ・ as a round bullet • at the start of T4-T7 and between the two entries in T5; the third attempt is saved. All other visible s5 text matched. No further attempt was made because the maximum of 3 attempts per slide was reached."
+}
