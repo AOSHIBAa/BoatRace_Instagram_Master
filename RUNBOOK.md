@@ -6,7 +6,10 @@
 ## 前提
 - アカウントのテーマ:近畿4場(住之江・尼崎・びわこ・三国)を**公式データの独自集計で読む**。公式展望の要約のような「誰でも作れる内容」は作らない。
 - 投稿は Metricool(brandId `7875834`、タイムゾーン Asia/Tokyo)に**下書き(draft: true)で予約**する。公開はユーザーの確認後。自分で draft を false にしない。
-- Metricool 無料プランは予約が**月20件まで**。**投稿はすべて通常のリール(`instagramData.type: REEL`、`showReelOnFeed: true`)1件だけ**にする。カルーセルやお試しリールは作らない。ネタは**月20本まで**。
+- Metricool 無料プランは予約が**月20件まで**。**投稿は1ネタにつきリール1件だけ**にする(カルーセルは作らない)。ネタは**月20本まで**。
+  - 基本は通常のリール(`instagramData.type: REEL`、`showReelOnFeed: true`)。
+  - **4本に1本はお試しリール**(`instagramData.type: TRIAL_REEL`)にする。`data/posts_log.csv` のリールの行を数え、今回が4の倍数本目ならお試しリールにする。お試しリールは最初フォロワー以外にだけ表示され、プロフィールの一覧には並ばない。新規の人に届けるための枠なので、ネタはその週で一番強いもの(数字にインパクトがあるもの)を選ぶ。
+  - TRIAL_REEL が拒否されたら REEL で予約し、ユーザーに知らせる。
   - 毎回、`data/posts_log.csv` の今月の行数と、Metricool の `getScheduledPosts`(今月1日〜月末)の件数を確認し、多いほうを「使用済み」とする。
   - 残りが1件未満なら、その日は投稿を作らない(依頼書だけ置く)。月末まで均等に使えるよう、残り件数÷残り日数が1を下回る日は見送ってよい。
   - 目安は**週4〜5本**。大きい開催(GⅠ・SGなど)の日は優先し、ネタが弱い日は無理に作らない。作らない日もユーザーに「今日は見送り(理由)」と一言知らせる。
@@ -37,8 +40,8 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
 5. `/tmp/contact.png` を Read で必ず目視し、文字のはみ出し・重なり・空白の崩れを直す。
 6. **レビュー**:別のエージェント(Agent ツール)に、画像の数字と `motors.json`・CSV の数字の突き合わせ、誤字、選手名・号機の取り違え、誇大表現(「必勝」「稼げる」「確実」など)や「AI」「Claude」の文言が入っていないかを確認させ、指摘を直す。
 7. `python3 scripts/make_reel.py images/posts/<フォルダ> 4` で、画像から縦長のリール動画 `reel.mp4`(1枚4秒)を作る。動画の最初のフレームを Read で確認する。
-8. 画像と動画をコミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` の `reel.mp4` を Metricool の `createScheduledPost` に渡す(`media` に動画のURL1つ、`instagramData.type` は `REEL`、`showReelOnFeed: true`、`videoThumbnailUrl` に1枚目 s1.png のURL、`draft: true`、`autoPublish: true`)。公開予定はその日の 19:00〜21:00(ユーザーが確認する時間を残すため、作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。動画は無音なので、キャプションの1行目で中身が分かるようにする。
-9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」)してコミット。
+8. 画像と動画をコミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` の `reel.mp4` を Metricool の `createScheduledPost` に渡す(`media` に動画のURL1つ、`instagramData.type` は `REEL`(4本に1本は `TRIAL_REEL`)、`showReelOnFeed: true`、`videoThumbnailUrl` に1枚目 s1.png のURL、`draft: true`、`autoPublish: true`)。公開予定はその日の 19:00〜21:00(ユーザーが確認する時間を残すため、作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。動画は無音なので、キャプションの1行目で中身が分かるようにする。
+9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」か「お試しリール」)してコミット。
 10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。Codex が翌朝10時台にこれを読んで画像を作る。
 11. ユーザーに、ネタ・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
 
