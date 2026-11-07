@@ -1,0 +1,83 @@
+{
+  "file": "s3.png",
+  "size_px": "1122x1402",
+  "attempts": 3,
+  "text_check": [
+    {
+      "id": "T1",
+      "expected": "機歴分析|隠れ上位モーター",
+      "rendered_ok": true
+    },
+    {
+      "id": "T2",
+      "expected": "3/7",
+      "rendered_ok": true
+    },
+    {
+      "id": "T3",
+      "expected": "びわこ 25号機",
+      "rendered_ok": true
+    },
+    {
+      "id": "T4",
+      "expected": "数字は平凡。でも乗った選手のほとんどが、普段より速い展示を出しています。",
+      "rendered_ok": true
+    },
+    {
+      "id": "T5",
+      "expected": "公式のモーター2連対率",
+      "rendered_ok": true
+    },
+    {
+      "id": "T6",
+      "expected": "27.6%",
+      "rendered_ok": true
+    },
+    {
+      "id": "T7",
+      "expected": "場の中央値 32.4%",
+      "rendered_ok": true
+    },
+    {
+      "id": "T8",
+      "expected": "展示タイム(レースの真ん中より)",
+      "rendered_ok": true
+    },
+    {
+      "id": "T9",
+      "expected": "0.049秒速い",
+      "rendered_ok": true
+    },
+    {
+      "id": "T10",
+      "expected": "展示がレース内2位以内",
+      "rendered_ok": true
+    },
+    {
+      "id": "T11",
+      "expected": "62%",
+      "rendered_ok": true
+    },
+    {
+      "id": "T12",
+      "expected": "(73走)",
+      "rendered_ok": true
+    },
+    {
+      "id": "T13",
+      "expected": "普段より展示が速かった選手",
+      "rendered_ok": true
+    },
+    {
+      "id": "T14",
+      "expected": "8人中8人",
+      "rendered_ok": true
+    },
+    {
+      "id": "T15",
+      "expected": "BOAT RACE公式の競走成績・番組表(2026/7/7〜11/4)を独自に集計。展示タイムはレース内の中央値との差",
+      "rendered_ok": true
+    }
+  ],
+  "notes": "3回目を最終採用。全15項目を目視で文字単位に照合し、指定文字列どおりであることを確認。2回目まではT15の波ダッシュがASCIIチルダに見えたため再生成した。"
+}
