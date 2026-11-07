@@ -6,9 +6,11 @@
 ## 前提
 - アカウントのテーマ:近畿4場(住之江・尼崎・びわこ・三国)を**公式データの独自集計で読む**。公式展望の要約のような「誰でも作れる内容」は作らない。
 - 投稿は Metricool(brandId `7875834`、タイムゾーン Asia/Tokyo)に**下書き(draft: true)で予約**する。公開はユーザーの確認後。自分で draft を false にしない。
-- Metricool 無料プランは予約が**月20件まで**。**投稿は1ネタにつきリール1件だけ**にする(カルーセルは作らない)。ネタは**月20本まで**。
-  - 基本は通常のリール(`instagramData.type: REEL`、`showReelOnFeed: true`)。
-  - **4本に1本はお試しリール**(`instagramData.type: TRIAL_REEL`)にする。`data/posts_log.csv` のリールの行を数え、今回が4の倍数本目ならお試しリールにする。お試しリールは最初フォロワー以外にだけ表示され、プロフィールの一覧には並ばない。新規の人に届けるための枠なので、ネタはその週で一番強いもの(数字にインパクトがあるもの)を選ぶ。
+- Metricool 無料プランは予約が**月20件まで**。**1ネタにつき予約は1件だけ**。ネタは**月20本まで**。
+  - 画像は**基本3〜5枚**。中身に合わせて枚数を決め、水増ししない。
+  - 形式は基本**リール**(`instagramData.type: REEL`、`showReelOnFeed: true`、画像をつないだ無音動画)。
+  - 表や順位など、1枚を読むのに5秒以上かかる内容で、リールでは読み切れない場合だけ**通常の投稿(スライド形式)**にする(`instagramData.type: POST`、`media` に画像URLを順番に並べる)。理由をユーザーへの連絡に一言書く。
+  - **リール4本に1本はお試しリール**(`instagramData.type: TRIAL_REEL`)にする。`data/posts_log.csv` のリールの行を数え、今回が4の倍数本目ならお試しリールにする。お試しリールは最初フォロワー以外にだけ表示され、プロフィールの一覧には並ばない。新規の人に届けるための枠なので、ネタはその週で一番強いもの(数字にインパクトがあるもの)を選ぶ。
   - TRIAL_REEL が拒否されたら REEL で予約し、ユーザーに知らせる。
   - 毎回、`data/posts_log.csv` の今月の行数と、Metricool の `getScheduledPosts`(今月1日〜月末)の件数を確認し、多いほうを「使用済み」とする。
   - 残りが1件未満なら、その日は投稿を作らない(依頼書だけ置く)。月末まで均等に使えるよう、残り件数÷残り日数が1を下回る日は見送ってよい。
@@ -33,26 +35,43 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
    - 前日のレースで隠れ上位モーターが穴をあけた:配当つきの振り返り
    - 温水パイプ装着など、モーター相場が変わる出来事(装着日の前後で機歴を比べる)
    - `data/posts_log.csv` の直近7日と同じネタは避ける。今月の予約が上限に近ければ投稿しない日にしてよい。
-4. 画像を作る:`scripts/slides.py` の部品で 5〜7 枚。1枚目の表紙は次のとおり。
-   - `handoff/images/今日の日付/cover.png` があれば Read で必ず目で見て確認する。**競艇の艇に見える**(屋根のない艇、選手がひざをついて乗る、船外機)、**文字・数字・ロゴがない**、の両方を満たせば `cover_photo("handoff/images/今日/cover.png", ...)` を使う。
-   - なければ `git pull` してもう一度確認する。それでもなければ、下の「Codex への画像依頼」を今日の日付で行い(依頼書 `handoff/requests/今日.md` がなければ先に作ってpush)、最大12分、2分ごとに `git pull` して待つ。
-   - それでも届かない、または条件を満たさなければ `cover()`(図形の表紙)を使い、ユーザーへの連絡で理由を一言書く。
-   2枚目以降は図とデータ。最後は「まとめ」+ `DISCLAIMER`。各ページの `src` に出典と集計期間を書く。保存先は `images/posts/YYYY-MM-DD-短い英語名/`。
-5. `/tmp/contact.png` を Read で必ず目視し、文字のはみ出し・重なり・空白の崩れを直す。
-6. **レビュー**:別のエージェント(Agent ツール)に、画像の数字と `motors.json`・CSV の数字の突き合わせ、誤字、選手名・号機の取り違え、誇大表現(「必勝」「稼げる」「確実」など)や「AI」「Claude」の文言が入っていないかを確認させ、指摘を直す。
-7. `python3 scripts/make_reel.py images/posts/<フォルダ> 4` で、画像から縦長のリール動画 `reel.mp4`(1枚4秒)を作る。動画の最初のフレームを Read で確認する。
-8. 画像と動画をコミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` の `reel.mp4` を Metricool の `createScheduledPost` に渡す(`media` に動画のURL1つ、`instagramData.type` は `REEL`(4本に1本は `TRIAL_REEL`)、`showReelOnFeed: true`、`videoThumbnailUrl` に1枚目 s1.png のURL、`draft: true`、`autoPublish: true`)。公開予定はその日の 19:00〜21:00(ユーザーが確認する時間を残すため、作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。動画は無音なので、キャプションの1行目で中身が分かるようにする。
-9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」か「お試しリール」)してコミット。
-10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。続けて下の「Codex への画像依頼」を翌日の日付で行う(数分で main に `handoff/images/翌日/cover.png` が届く。届いたかの確認は翌日の手順4でよい)。
-11. ユーザーに、ネタ・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
+4. **企画(このタスクのClaude)**:画像の枚数(3〜5枚)と形式(リールか通常の投稿か)を決め、`handoff/slide_spec_template.md` をもとに指示書を作る。保存先は `handoff/slides/今日の日付-短い英語名/`。
+   - `spec.md`:各スライドのデザインと、入れる文字すべて(ID付き)。1枚目は表紙で、`handoff/images/今日/cover.png` を背景写真として使う指定にする。表紙写真がなければ、下の「Codex への表紙写真の依頼」を今日の日付で行い、最大12分、2分ごとに `git pull` して待つ。それでもなければ、写真なしの紺色の表紙の指定にする。
+   - `expected.json`:`{"s1": {"T1": "文字", ...}, "s2": {...}}`。`spec.md` の文字とまったく同じにする。
+   - 最後のスライドに「まとめ」と `DISCLAIMER` の文、各データのスライドに出典と集計期間を入れる。
+5. **指示書のレビュー(別のClaude)**:Agent ツールで別のエージェントに、`expected.json` の数字と `motors.json`・CSV の突き合わせ、選手名・号機の取り違え、誤字、誇大表現(「必勝」「稼げる」「確実」など)、「AI」「Claude」の文言、指示の曖昧さ(記号の全角半角、文字の大きさ、色)を確認させる。指摘を直し、問題がなくなってからコミット・push する。
+6. **生成(Codex)**:下の「Codex へのスライド生成の依頼」を行う。Codex が `s1.png`〜`sN.png` を同じフォルダに push する。2分ごとに `git pull` し、最大25分待つ。
+7. **照合(Codex の書き起こし + プログラム + このClaude)**:
+   - 下の「Codex への書き起こしの依頼」を行い、返信の JSON を `transcript.json` として保存する。
+   - `python3 scripts/check_slide_text.py expected.json transcript.json` を実行する。1文字でも違えば **NG**(AIの判断より、このプログラムの結果を優先する)。
+   - このClaude自身も、全スライドを Read で見て、文字と数字を `expected.json` と照らし合わせる。あわせて、ボートが競艇の艇に見えるか、文字のはみ出しや重なりがないか、人物の顔・ロゴ・「AI」の文字がないかを確認する。
+   - NG のスライドだけ、違っていた箇所を明記して Codex に1回だけ作り直させ、もう一度この手順7を行う。それでも NG のスライドは、`scripts/slides.py` の部品で同じ文字のスライドを作って差し替え、ユーザーへの連絡に一言書く。
+8. **下書きのアップロード**:リールなら `python3 scripts/make_reel.py <フォルダ> 4` で `reel.mp4` を作り、最初のフレームを Read で確認する。コミットして push。`https://raw.githubusercontent.com/AOSHIBAa/BoatRace_Instagram_Master/main/<パス>` を Metricool の `createScheduledPost` に渡す。
+   - リール:`media` に `reel.mp4` のURL1つ、`instagramData.type` は `REEL`(4本に1本は `TRIAL_REEL`)、`showReelOnFeed: true`、`videoThumbnailUrl` に s1.png のURL。
+   - 通常の投稿:`media` に s1.png〜sN.png のURLを順番に、`instagramData.type: POST`。
+   - どちらも `draft: true`、`autoPublish: true`。公開予定はその日の 19:00〜21:00(作成から最低5時間あける)。キャプションには要点、出典、20歳以上の注意書き、ハッシュタグ 8〜10 個。リールは無音なので、キャプションの1行目で中身が分かるようにする。
+9. `data/posts_log.csv` に予約ごとに1行ずつ追加(status は `draft`、topic の末尾に「リール」「お試しリール」「投稿」のどれか)してコミット。
+10. **翌日の画像依頼書を置く**:`handoff/request_template.md` をもとに `handoff/requests/翌日の日付.md` を作り、翌日に取り上げそうな場(番組表や開催予定から推測。分からなければ4場を順番に)の雰囲気と構図を1つずつ選んで埋め、コミット・pushする。続けて下の「Codex への表紙写真の依頼」を翌日の日付で行う(数分で main に `handoff/images/翌日/cover.png` が届く。届いたかの確認は翌日の手順4でよい)。
+11. ユーザーに、ネタ・形式と枚数・公開予定時刻・Metricool のリンク(plannerUrl)・確認してほしい点を短く知らせる。
 
-## Codex への画像依頼(GitHub の @codex)
-- Issue #1 にコメントする(日付 D は依頼する日):
+## Codex への依頼(GitHub の @codex)
+どれも Issue #1 にコメントする。`gh api -X POST repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments -f body="..."`。Codex は数分で Issue に返信する。返信に push の失敗が書かれていたら、内容をユーザーへの連絡に一言入れる。
+
+**表紙写真の依頼**(日付 D。同じ日付の cover.png がすでに main にあれば依頼しない)
 ```
-gh api -X POST repos/AOSHIBAa/BoatRace_Instagram_Master/issues/1/comments -f body="@codex handoff/requests/D.md の指示どおりに、組み込みの画像生成ツールで表紙画像を1枚生成し、handoff/images/D/cover.png として保存し、同じフォルダに report.json(使ったプロンプト、画像サイズ、確認結果)を書いてください。画像内に文字・数字・ロゴ・旗は一切入れないこと。その2ファイルだけをコミットし、git pull --rebase origin main のあと git push origin HEAD:main を実行してください。pushに失敗したら、トークン部分を伏せた git remote -v とエラー文を返信に書いてください。"
+@codex handoff/requests/D.md の指示どおりに、組み込みの画像生成ツールで表紙画像を1枚生成し、handoff/images/D/cover.png として保存し、同じフォルダに report.json(使ったプロンプト、画像サイズ、確認結果)を書いてください。画像内に文字・数字・ロゴ・旗は一切入れないこと。その2ファイルだけをコミットし、git pull --rebase origin main のあと git push origin HEAD:main を実行してください。pushに失敗したら、トークン部分を伏せた git remote -v とエラー文を返信に書いてください。
 ```
-- Codex は数分で返信し、自分で main に push する。返信に push 失敗が書かれていたら、その内容をユーザーへの連絡に一言入れる(同じ日に依頼し直すのは1回まで)。
-- 同じ日付の cover.png がすでに main にあれば依頼しない。
+
+**スライド生成の依頼**(F はフォルダ)
+```
+@codex F/spec.md を最初から最後まで読み、その指示に厳密に従って、組み込みの画像生成ツールでスライド画像 s1.png〜sN.png を作ってください。文字は F/expected.json と1文字も変えないこと。生成後に自分で照合し、違っていれば作り直す(1枚につき最大3回)。結果を F/report.json に正直に書き、画像と report.json だけをコミットして git pull --rebase origin main のあと git push origin HEAD:main してください。
+```
+
+**書き起こしの依頼**(判定はさせない。ファイルも変更させない)
+```
+@codex 書き起こしだけお願いします。ファイルの変更・コミット・pushは禁止。F/spec.md で各文字のIDと位置を確認し、F/ の各スライド画像を自分の目で見て、画像に実際に描かれている文字を、そのまま1文字ずつ書き起こしてください。正しいかどうかの判断や、期待される文字への修正は絶対にしないこと。返信は、```json で囲んだ {"s1": {"T1": "読み取った文字", ...}, ...} の形だけにしてください。
+```
+- 返信の ```json の中身を、そのまま `F/transcript.json` に保存する。
 
 ## 書き方のルール
 - 数字は必ずデータから計算したものだけ。推測の数字は書かない。
