@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s3.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+  ],
+  "notes": "Built-in image generation tool used for all slides. Visual character-by-character review found s1-s4 matched the requested text. On s5, three attempts were made; the generator continued to render the leading Japanese middle dots (・) in T4-T6 as round bullet glyphs (•), and the full-width parentheses in T4 appear visually as narrow ASCII-style parentheses. The third attempt was retained and these unresolved differences are reported honestly. No additional text, logos, watermarks, flags, or forbidden words were observed."
+}
