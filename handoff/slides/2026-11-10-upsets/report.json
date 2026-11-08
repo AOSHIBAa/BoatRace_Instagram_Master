@@ -1,0 +1,30 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    }
+  ],
+  "notes": "Built-in image generation tool used. Each slide was visually compared against expected.json. s1 appeared to match all listed text. s2-s5 reached the maximum 3 attempts. The generator continued to render visually equivalent but potentially non-identical glyph forms: s2 T8 appears as ASCII = instead of full-width ＝; s2 T9, s3 T20, and s4 T6/T9/T11 appear to use half-width-looking parentheses instead of full-width （）; s5 T4-T6 appear as round bullets • instead of Japanese middle dots ・. All other text appeared to match on visual inspection. No claim of exact character-level compliance is made for those noted items."
+}
