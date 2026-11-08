@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-09",
+  "attempts": 1,
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 social media cover image\nPrimary request: Photorealistic Japanese-style kyotei motorboat racing at night under bright stadium floodlights, with city lights softly blurred far in the background and calm dark water.\nSubject: Two or three authentic kyotei racing boats in a close pack exiting a turn. Each is a single-seat racing boat about 3 meters long, flat, low, and long relative to its racer, with a white or pale-grey hull; an open cockpit with absolutely no canopy, roof, windshield, or bubble; one racer crouching or kneeling low and leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit, face invisible; one outboard motor at the stern producing a large white spray plume.\nComposition/framing: Vertical 4:5. Keep every boat in the lower half. The top 45 percent must be dark, visually quiet, empty, and uncluttered for later title overlay. Dynamic close turn-exit action while preserving clean negative space above.\nLighting/mood: Realistic night stadium lighting reflecting subtly on dark water; dramatic but natural sports photography.\nText: none.\nConstraints: Boats must unmistakably resemble Japanese kyotei boats, not offshore powerboats or F1 tunnel boats. No recognizable real person.\nAvoid: absolutely no text, letters, digits, numbers, logos, brands, watermarks, signage, number plates, flags, emblems, decals, or readable markings anywhere; no canopy; no roof; no windshield bubble; no offshore powerboat or F1 tunnel-boat design.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 1921902,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "two_or_three_boats_in_close_pack": true,
+    "open_cockpits_no_canopy_roof_or_windshield": true,
+    "outboard_motors_and_white_spray": true,
+    "night_race_with_stadium_lights": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_flags_or_number_plates": false,
+    "recognizable_real_person": false
+  },
+  "review": "Visually inspected the generated image at full display size; all requested composition and exclusion checks passed."
+}
