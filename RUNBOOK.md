@@ -27,6 +27,15 @@ GitHub Actions が毎朝 6:07〜6:27(JST)予定で公式データを取り込む
 - `scripts/analyze_motors.py` → `data/analysis/motors.json`:場ごとのモーター機歴(展示偏差、乗り手補正、t値、隠れ上位フラグ)
 - `scripts/analyze_payouts.py 場名:番号 ...`:指定モーターの単勝回収率・3連単配当・万舟
 
+## テストモード(2026年11月中は常にこれ。12月1日から通常に戻す)
+12月の本番に向けて、投稿の完成度を上げる期間。次のとおり、通常の手順を一部変える。
+- **見送りはしない。** 月20件の枠のルール、週4〜5本の目安、「ネタが弱い日は作らない」は使わない。毎回必ず1本、最後まで作る。
+- **Metricool には入れない**(手順8の createScheduledPost を行わない。Metricool への下書き保存は動作確認済み)。
+- そのかわり、投稿フォルダ(`handoff/slides/日付-名前/`)に `caption.txt`(キャプション全文とハッシュタグ)を保存し、画像・`reel.mp4`(通常の投稿ならスライドのみ)と一緒にコミット・push する。
+- `data/posts_log.csv` には status を `test` として1行追加する(uuid の欄は空)。
+- それ以外(企画、指示書のレビュー、Codex での生成、書き起こしとプログラムでの照合、目視の確認、作り直し、翌日の表紙写真の依頼)は通常どおり全部行う。
+- 最後のユーザーへの連絡には、GitHub のフォルダのリンク(`https://github.com/AOSHIBAa/BoatRace_Instagram_Master/tree/main/<フォルダ>`)、ネタ、枚数、照合の結果(作り直しがあったか)、自分で気になった点を書く。
+
 ## 毎朝の手順
 1. `git pull`。当日の `data/program/今日.csv` と前日の `data/results` があるか確認。なければ `gh run list` で GitHub Actions の実行状況を確認し、実行中なら最大20分待って再度 pull する。それでもなければ進めず、ユーザーに知らせる。
 2. `python3 scripts/analyze_motors.py` を実行し、`motors.json` を更新してコミット。
