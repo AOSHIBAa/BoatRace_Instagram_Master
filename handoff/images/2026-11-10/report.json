@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-10",
+  "attempts": 1,
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical social-media cover image, 4:5 (1080x1350 or closest)\nPrimary request: Photorealistic Japanese-style kyotei motorboat racing scene in late afternoon on an urban riverside course, with warm low sunlight and light ripples.\nScene/backdrop: subdued urban riverside course at late afternoon; the upper 45% of the entire frame must be dark, visually empty, and uncluttered for a later title overlay, with no signs or identifiable markings.\nSubject: One authentic Japanese kyotei racing boat banking into a tight left turn around an orange-and-white cylindrical turn buoy. The boat is a single-seat racing boat about 3 meters long, flat, low, and long relative to the racer, with a light-colored white or pale-grey hull. It has an OPEN cockpit: absolutely no canopy, roof, or windshield bubble. The racer crouches or kneels very low inside the open cockpit, leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit; the face is not visible. One outboard motor is mounted on the stern, throwing a large white spray plume behind it, with spray curving outward around the turn.\nStyle/medium: high-end photorealistic sports photography, realistic water, hull, motor, light, and spray; not illustration or CGI.\nComposition/framing: portrait 4:5; boat entirely in the lower half; top 45% dark and empty; dynamic low telephoto sports-photo viewpoint.\nLighting/mood: warm low late-afternoon sunlight, dramatic yet natural.\nText: none.\nConstraints: must clearly look like Japanese kyotei, not an offshore powerboat and not an F1 tunnel boat; open cockpit; exactly one stern outboard motor; no recognizable real person.\nAvoid: absolutely no text, letters, digits, numbers, logos, brands, watermarks, signage, number plates, race numbers, flags, emblems, readable markings, canopy, roof, windshield bubble, enclosed cockpit, offshore powerboat proportions, F1 tunnel boat styling, extra boats, identifiable faces.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 2146082,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "single_light_colored_low_long_hull": true,
+    "open_cockpit_no_canopy_roof_or_windshield": true,
+    "racer_crouched_with_face_not_visible": true,
+    "one_outboard_motor_and_white_spray": true,
+    "tight_left_turn_around_orange_and_white_buoy": true,
+    "late_afternoon_warm_low_sunlight": true,
+    "urban_riverside_course_and_light_ripples": true,
+    "boat_in_lower_half": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_flags_or_number_plates": false,
+    "recognizable_real_person": false
+  },
+  "review": "Visually inspected the generated image at full display size; all requested subject, composition, lighting, and exclusion checks passed."
+}
