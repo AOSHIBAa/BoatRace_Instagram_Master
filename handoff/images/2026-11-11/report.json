@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-11",
+  "attempts": 1,
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 Instagram cover image\nPrimary request: Photorealistic Japanese-style kyotei (motorboat racing) scene on a coastal course with a big dramatic sky, strong wind, and choppy water.\nScene/backdrop: coastal racing course; dramatic dark sky; strong wind; choppy water.\nSubject: One authentic kyotei racing boat running straight at full speed, seen from a low side angle, with a large white spray plume trailing behind.\nStyle/medium: photorealistic sports photography.\nComposition/framing: vertical 4:5 (1080x1350 or closest); boat entirely in the lower half; top 45% dark, empty, and uncluttered for later title overlay.\nLighting/mood: dramatic, windswept, high-speed coastal atmosphere.\nConstraints: The boat MUST look like a kyotei racing boat, NOT an offshore powerboat or F1 tunnel boat: a single-seat racing boat about 3 m long, flat, low and long relative to the racer, with a light-colored white or pale-grey hull; OPEN cockpit with NO canopy, NO roof, and NO windshield bubble; racer crouching or kneeling low inside the open cockpit, leaning forward, both hands on a small steering wheel; plain full-face helmet and plain racing suit; face not visible; exactly one outboard motor on the stern; big white spray plume behind the motor; no recognizable real person.\nAvoid: Absolutely no text, letters, numbers, logos, watermarks, signage, number plates, or flags anywhere in the image. No markings on boat, helmet, suit, motor, water, sky, or background. No extra boats. No canopy, roof, windshield bubble, offshore powerboat, or F1 tunnel boat.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 1958423,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "single_light_colored_low_long_hull": true,
+    "open_cockpit_no_canopy_roof_or_windshield": true,
+    "racer_crouched_with_face_not_visible": true,
+    "both_hands_on_small_steering_wheel": true,
+    "one_outboard_motor_and_white_spray": true,
+    "running_straight_from_low_side_angle": true,
+    "coastal_course_big_dramatic_sky_strong_wind_choppy_water": true,
+    "boat_in_lower_half": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_flags_or_number_plates": false,
+    "recognizable_real_person": false
+  },
+  "review": "Visually inspected the generated image at full display size; all requested subject, composition, weather, and exclusion checks passed."
+}
