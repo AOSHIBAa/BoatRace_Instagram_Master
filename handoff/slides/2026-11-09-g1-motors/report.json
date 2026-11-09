@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {"file": "s1.png", "size_px": "1122x1402", "attempts": 3},
+    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s3.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s5.png", "size_px": "1122x1402", "attempts": 2}
+  ],
+  "notes": "Built-in image generation tool used. All slides were visually checked against expected.json. The tool consistently rendered the required U+2160 character in GⅠ as an ASCII-looking I glyph on every slide; s1 was retried to the three-attempt limit without resolving it. On s2 and s3, the required full-width Japanese parentheses appear as narrow ASCII-style parentheses. On s4, the full-width punctuation glyph shapes may also appear ASCII-like. On s5, the required Japanese middle dots at the start of T4-T6 were rendered as round bullet symbols; one correction attempt did not resolve them. All remaining wording, numbers, names, ordering, and layout were visually checked and appear correct. No extra logo or watermark was observed."
+}
