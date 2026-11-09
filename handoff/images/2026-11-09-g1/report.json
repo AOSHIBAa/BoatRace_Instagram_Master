@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-09-g1",
+  "attempts": 1,
+  "tool": "built-in image generation tool",
+  "prompt": "Use case: photorealistic-natural\nAsset type: Instagram cover image, vertical 4:5\nPrimary request: Photorealistic Japanese-style kyotei motorboat racing at night under bright stadium floodlights, with distant city lights softly blurred and calm dark water.\nScene/backdrop: Night racecourse; distant city lights only, no readable signage or markings.\nSubject: One authentic Japanese kyotei racing boat banking into a tight left turn around one orange-and-white cylindrical turn buoy. The boat is a single-seat racing boat about 3 meters long, flat, low, and long relative to the racer, with a light white or pale-grey hull. It must not resemble an offshore powerboat or F1 tunnel boat. Open cockpit only: no canopy, roof, or windshield bubble. The racer crouches or kneels low in the open cockpit, leans forward, and holds a small steering wheel with both hands. Racer wears a plain full-face helmet and plain racing suit; face is not visible. One outboard motor is mounted on the stern, throwing a large white spray plume that curves outward behind the turn.\nStyle/medium: Highly realistic sports photography with credible boat proportions, water physics, and stadium illumination.\nComposition/framing: Portrait 4:5. Keep the boat and buoy entirely in the lower half. The top 45% must remain dark, uncluttered negative space suitable for later title overlay.\nLighting/mood: Dramatic night race lighting, bright floodlights reflecting subtly on dark water, energetic but clean.\nText: none.\nConstraints: Exactly one racing boat; authentic open-cockpit kyotei form; orange-and-white cylindrical buoy; no recognizable real person.\nAvoid: absolutely no text, letters, digits, numbers, logos, watermarks, signage, number plates, boat numbers, branding, flags, banners, emblems, or typographic-like marks anywhere. No canopy, no roof, no windshield bubble.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 2301873,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "single_low_long_light_colored_boat": true,
+    "open_cockpit_no_canopy_roof_or_windshield": true,
+    "crouched_helmeted_racer_face_not_visible": true,
+    "single_outboard_motor_and_large_spray": true,
+    "tight_left_turn_around_orange_white_buoy": true,
+    "night_stadium_lighting_and_distant_city_lights": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_number_plates_or_flags": false,
+    "has_recognizable_real_person": false
+  },
+  "verification": "Visually inspected the generated image. It shows one low, light-colored, open-cockpit kyotei racing boat with a crouched helmeted racer, one stern outboard motor, a large curved spray plume, and an orange-and-white cylindrical turn buoy at a floodlit night racecourse. The upper 45% is dark and uncluttered. No text, letters, numbers, logos, watermarks, signage, number plates, or flags were observed."
+}
