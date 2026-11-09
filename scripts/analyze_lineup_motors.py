@@ -26,6 +26,12 @@ def main():
     prog = [r for r in csv.DictReader(open(f"data/program/{day}.csv", encoding="utf-8"))
             if r["venue"] == venue and r["race"] in races]
 
+    # 番組表の選手名は4文字で切れることがあるため、競走成績の表記を優先する
+    full = {}
+    for p in sorted(Path("data/results").glob("*.csv")):
+        for r in csv.DictReader(p.open(encoding="utf-8")):
+            full[r["racer_number"]] = r["racer_name"]
+
     ser = defaultdict(list)
     if series:
         d = date.fromisoformat(series)
@@ -59,7 +65,7 @@ def main():
         rk, x = rank[int(r["motor"])]
         s = ser.get(r["racer_number"], [])
         out["entries"].append({
-            "race": int(r["race"]), "boat": int(r["boat"]), "name": r["racer_name"],
+            "race": int(r["race"]), "boat": int(r["boat"]), "name": full.get(r["racer_number"], r["racer_name"]),
             "motor": int(r["motor"]), "rank": rk, "ex_adj": x["ex_adj"], "t": x["t"],
             "starts": x["starts"], "hidden": x["hidden"], "motor_2r_program": float(r["motor_2r"]),
             "series_ex_mean": round(st.mean(s), 4) if s else None, "series_n": len(s),
