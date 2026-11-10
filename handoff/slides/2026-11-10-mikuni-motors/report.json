@@ -1,0 +1,30 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 2
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 2
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 2
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 2
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    }
+  ],
+  "notes": "Built-in image generation tool used. All slides were visually inspected against expected.json. s1-s4 appear to match the required text. On s5, after the maximum 3 attempts, the generator continued to render the leading Japanese middle dot ・ on T4-T6 as a round bullet-like glyph •; this unresolved visual difference is reported honestly. No other known differences."
+}
