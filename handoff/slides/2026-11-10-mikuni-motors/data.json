@@ -1,0 +1,30 @@
+{
+ "venue": "三国",
+ "period": "2026-04-05..2026-11-07",
+ "n_motors": 60,
+ "motor_2r_median_60": 33.945,
+ "program": "2026-11-10",
+ "ranks_by_ex_adj": {
+  "40": 1,
+  "45": 2,
+  "55": 3,
+  "42": 4,
+  "35": 5,
+  "51": 6,
+  "48": 7,
+  "52": 8,
+  "46": 9,
+  "43": 10
+ },
+ "m55": {
+  "ex_adj": -0.0332,
+  "starts": 146,
+  "motor_2r": 32.5,
+  "hidden": true
+ },
+ "m48": {
+  "motor_2r": 32.14,
+  "hidden": true
+ },
+ "note": "宮嵜隆太郎 is truncated to 宮嵜隆太 in program; full name from results (racer 3825)"
+}
