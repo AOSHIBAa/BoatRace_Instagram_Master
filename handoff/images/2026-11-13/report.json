@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13",
+  "attempts": 1,
+  "tool": "built-in image generation tool",
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical social-media cover image\nPrimary request: Photorealistic vertical 4:5 image (1080x1350 or closest). Japanese-style kyotei (motorboat racing) scene. late-afternoon race, warm low sunlight, urban riverside course, light ripples.\n\nThe boat MUST look like a kyotei racing boat, NOT an offshore powerboat or F1 tunnel boat:\n- single-seat racing boat about 3 m long, flat, low and long relative to the racer, light-colored hull (white or pale grey)\n- OPEN cockpit with NO canopy, NO roof, NO windshield bubble\n- the racer crouches / kneels low inside the open cockpit, leaning forward, both hands on a small steering wheel, plain full-face helmet and plain racing suit (no numbers, no lettering, no logos); face not visible\n- one outboard motor on the stern with a big white spray plume behind it\n- running straight at full speed seen from a low side angle, spray trailing behind\n\nComposition: boat in the lower half, top 45% dark and uncluttered so a title can be overlaid later.\nLighting/mood: late-afternoon warm low sunlight, cinematic but natural.\nConstraints: absolutely no text, letters, numbers, logos, watermarks, signage, number plates or flags anywhere in the image. No recognizable real person.\nAvoid: offshore powerboat, F1 tunnel boat, enclosed cockpit, canopy, roof, windshield bubble, visible face, branding, lettering, numerals, flags.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 1837688,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "single_seat_low_long_light_hull": true,
+    "open_cockpit_no_canopy_roof_or_windshield": true,
+    "crouched_helmeted_racer_face_not_visible": true,
+    "one_outboard_motor_and_white_spray": true,
+    "late_afternoon_urban_riverside_scene": true,
+    "boat_in_lower_half": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_number_plates_or_flags": false,
+    "has_recognizable_real_person": false
+  },
+  "verification": "Visually inspected the generated image. It shows a low, long, light-colored, single-seat open-cockpit kyotei boat running straight at speed from a low side angle, with a crouched helmeted racer, one stern outboard motor, and a large trailing white spray plume. The scene has warm late-afternoon light on an urban riverside course, and the upper 45% is dark and uncluttered. No text, letters, numbers, logos, watermarks, signage, number plates, or flags were observed."
+}
