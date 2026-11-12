@@ -1,0 +1,25 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    }
+  ],
+  "notes": "Built-in image generation tool used. All four slides were visually checked against expected.json. s1 and s3 matched all requested text on visual inspection. s2 was regenerated to the maximum of 3 attempts, but T10 still appears as 園頭心 instead of the required 薗頭心; the final selected image is the first attempt because it best preserves the specified dark-card design and all other text. s4 was regenerated to the maximum of 3 attempts, but the leading Japanese middle dots in T4-T6 continued to appear as round bullet glyphs; the final selected image is the first attempt because it best preserves the specified dark-card design and all other text. No further attempts were made because the specification limits each slide to 3 attempts."
+}
