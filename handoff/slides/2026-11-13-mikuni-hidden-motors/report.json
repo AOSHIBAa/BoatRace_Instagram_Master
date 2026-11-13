@@ -1,0 +1,30 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 3
+    }
+  ],
+  "notes": "Built-in image generation tool used. Visual character-by-character review: s1, s2, and s3 matched expected.json. s4 reached the 3-attempt maximum; both occurrences of 宮嵜隆太郎 still appear as 宮寄隆太郎, so s4 T10 and T38 do not match. s5 reached the 3-attempt maximum; the leading Japanese middle dots ・ in T4-T7 still appear as round bullets •, so those four items do not match. All other visually reviewed items match, with no extra text, logos, watermarks, or flags observed."
+}
