@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "attempts": 1,
+  "tool": "built-in image generation tool",
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image\nPrimary request: Photorealistic vertical 4:5 image (1080x1350 or closest). Japanese-style kyotei motorboat racing on a coastal course with a big dramatic sky, strong wind, and choppy water.\nScene/backdrop: coastal race course under a huge dark dramatic windblown sky; rough choppy water.\nSubject: one single-seat Japanese kyotei racing boat, about 3 m long, flat, low and long relative to the racer, with a light white or pale-grey hull. It must not resemble an offshore powerboat or an F1 tunnel boat. OPEN cockpit only: no canopy, no roof, no windshield bubble. The racer crouches or kneels low in the open cockpit, leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit; face not visible. One outboard motor mounted on the stern creates a large white spray plume. The boat banks into a tight left turn around an orange-and-white cylindrical turn buoy, with spray curving outward.\nStyle/medium: highly realistic editorial sports photography with natural textures and convincing hydrodynamics.\nComposition/framing: portrait 4:5; boat entirely in the lower half; the top 45% must remain dark, simple, and uncluttered as clean negative space for a future title.\nLighting/mood: dramatic coastal storm light, energetic and windswept.\nText: none.\nConstraints: no recognizable real person; preserve accurate Japanese kyotei boat proportions and open-cockpit construction.\nAvoid: absolutely no text, letters, numbers, logos, watermarks, signage, number plates, flags, branding, readable markings, canopy, roof, windshield bubble, offshore powerboat form, F1 tunnel boat form.",
+  "image_size_px": "1122x1402",
+  "png_bytes": 2318672,
+  "checks": {
+    "looks_like_kyotei_boat": true,
+    "single_seat_low_long_light_hull": true,
+    "open_cockpit_no_canopy_roof_or_windshield": true,
+    "crouched_helmeted_racer_face_not_visible": true,
+    "one_outboard_motor_and_white_spray": true,
+    "coastal_course_strong_wind_and_choppy_water": true,
+    "tight_left_turn_around_orange_white_cylindrical_buoy": true,
+    "boat_in_lower_half": true,
+    "top_45_percent_dark_and_uncluttered": true,
+    "has_text_letters_or_numbers": false,
+    "has_logo_watermark_or_signage": false,
+    "has_number_plates_or_flags": false,
+    "has_recognizable_real_person": false
+  },
+  "verification": "Visually inspected the generated image. It shows a low, long, light-colored single-seat open-cockpit kyotei boat banking through a tight left turn beside an orange-and-white cylindrical buoy, with a crouched helmeted racer, one stern outboard motor, and a large curving white spray plume. Strong wind, choppy coastal water, and a dramatic sky are visible; the boat remains in the lower half and the upper 45% is dark and uncluttered. No text, letters, numbers, logos, watermarks, signage, number plates, or flags were observed."
+}
