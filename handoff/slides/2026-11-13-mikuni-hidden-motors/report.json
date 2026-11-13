@@ -26,5 +26,5 @@
       "attempts": 3
     }
   ],
-  "notes": "Built-in image generation tool used. Visual character-by-character review: s1, s2, and s3 matched expected.json. s4 reached the 3-attempt maximum; both occurrences of 宮嵜隆太郎 still appear as 宮寄隆太郎, so s4 T10 and T38 do not match. s5 reached the 3-attempt maximum; the leading Japanese middle dots ・ in T4-T7 still appear as round bullets •, so those four items do not match. All other visually reviewed items match, with no extra text, logos, watermarks, or flags observed."
+  "notes": "Built-in image generation tool used. s4 was regenerated three times for this correction request. The selected s4 makes T1 a yellow rounded band with black text and places T3 above and outside the table card. T48 remains exactly 1R・2R・9R・11Rは2機が同じレースに出走, and all other visually reviewed text remains unchanged. Despite explicitly specifying U+5D5C and the 山-over-奇 construction on every attempt, the generated T10 and T38 glyphs still appear closer to 宮寄隆太郎 than 宮嵜隆太郎; this unresolved mismatch is recorded honestly. No extra text, logos, watermarks, or flags were observed. The prior s5 mismatch remains unchanged: its leading Japanese middle dots ・ in T4-T7 appear as round bullets •."
 }
