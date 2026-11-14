@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s3.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+  ],
+  "notes": "組み込み画像生成ツールを使用。s1〜s4は目視でexpected.jsonの各文字項目と一致を確認。s5は最大3回まで生成・修正し、T4〜T7の文中の中黒は指定どおりだが、各行先頭の中黒「・」が丸い箇条書き記号「•」に見える字形のまま残ったため、未解消の相違として記録する。その他の文字は目視で一致を確認。"
+}
