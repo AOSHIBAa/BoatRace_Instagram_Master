@@ -1,0 +1,16 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 editorial cover image, approximately 1080x1350\nPrimary request: A photorealistic Japanese-style kyotei motorboat racing scene on a wide lake course, with soft mountains on the horizon, an overcast sky, and gentle swell.\nScene/backdrop: Wide lake, subdued soft mountain silhouettes on the horizon, overcast weather. Keep the top 45 percent dark, visually quiet, and uncluttered for a later title overlay.\nSubject: One authentic kyotei racing boat banking into a tight left turn around a plain orange-and-white cylindrical turn buoy, with spray curving outward. The boat is a single-seat racing craft about 3 meters long, flat, low, and long relative to the racer, with a white or pale-grey hull. It has an open cockpit: absolutely no canopy, roof, or windshield bubble. The racer crouches or kneels very low inside, leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit; face is not visible. One outboard motor is mounted on the stern, with a large white spray plume trailing behind.\nStyle/medium: Natural high-end sports photography, realistic Japanese boat-racing proportions and hydrodynamics, crisp subject with atmospheric background.\nComposition/framing: Vertical 4:5. Boat and buoy entirely in the lower half; upper 45 percent is dark negative space. Dynamic turning angle while the boat remains clearly identifiable as kyotei, not offshore powerboat.\nLighting/mood: Moody soft overcast light, restrained contrast, dramatic but credible.\nText (verbatim): none.\nConstraints: No recognizable real person. Every helmet, suit, hull, motor, and buoy surface must be blank and unbranded.\nAvoid: any text, letters, digits, numbers, logos, brands, watermarks, signatures, signage, number plates, emblems, flags, banners; no offshore powerboat, no F1 tunnel boat, no enclosed cockpit, no canopy, no roof, no windshield bubble; no additional boats or people.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "visual_review": "passed",
+    "kyotei_boat": "passed: one low, long single-seat racing boat with an open cockpit and one stern outboard motor",
+    "turn_scene": "passed: the boat banks through a tight left turn beside an orange-and-white cylindrical buoy, with spray curving outward",
+    "composition": "passed: portrait 4:5 with the boat in the lower half and a dark, uncluttered upper area",
+    "prohibited_content": "passed: no visible text, letters, numbers, logos, watermarks, signage, number plates, flags, or writing-like marks",
+    "people": "passed: the racer's face is obscured and no recognizable real person is depicted"
+  }
+}
