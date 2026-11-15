@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s2.png", "size_px": "1122x1402", "attempts": 2},
+    {"file": "s3.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+  ],
+  "notes": "Built-in image generation tool used for all slides. Visual character-by-character comparison against expected.json was performed after generation. s1, s3, and s4 matched all expected text on visual inspection. s2 was regenerated once to correct the Japanese wave-dash instruction; the final text visually matches, though the glyph shape is font-dependent. s5 was regenerated twice because the required Japanese middle-dot glyphs appeared visually similar to round bullets; after the maximum three attempts, the final image still renders those four leading glyphs in a visually round form, so exact U+30FB versus U+2022 identity cannot be confirmed from pixels alone. All other s5 text visually matches expected.json. No forbidden words, added text, logos, watermarks, signatures, arrows-with-text, flags, parentheses, or question marks were observed."
+}
