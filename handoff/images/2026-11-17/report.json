@@ -1,0 +1,26 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: Instagram cover image, vertical 4:5\nPrimary request: A photorealistic Japanese-style kyotei motorboat race in late afternoon, with two or three boats in a close pack exiting a turn on an urban riverside course with light ripples.\nScene/backdrop: Warm low sunlight over an urban riverside race course. Keep the top 45% dark, atmospheric, and uncluttered as clean negative space for a title overlay later; do not put any signage there or anywhere.\nSubject: Authentic Japanese kyotei single-seat racing boats, each about 3 meters long, flat, low, and long relative to the racer, with a white or pale-grey hull. Each has an OPEN cockpit: absolutely no canopy, roof, windshield, or bubble. Each racer crouches or kneels very low inside the open cockpit, leaning forward with both hands on a small steering wheel. Plain full-face helmets and plain racing suits; faces fully hidden. One outboard motor mounted on each stern and a large white spray plume trailing behind each boat.\nStyle/medium: High-end natural sports photography, realistic scale and anatomy, realistic water and spray.\nComposition/framing: Portrait 4:5. Boats occupy the lower half, dynamic close pack exiting the turn, all fully consistent with kyotei design. Top 45% remains dark and visually quiet.\nLighting/mood: Warm golden late-afternoon low-angle sunlight, dramatic but natural.\nText: none.\nConstraints: No recognizable real person. Every cockpit must be open. No offshore powerboats and no Formula 1 tunnel boats.\nAvoid: absolutely no text, letters, numbers, logos, emblems, watermarks, signage, advertisements, number plates, flags, banners, readable markings, helmet markings, suit markings, or hull markings anywhere in the image. No canopy, no roof, no windshield bubble.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "late_afternoon_urban_riverside_scene": true,
+      "two_or_three_authentic_open_cockpit_kyotei_boats": true,
+      "racers_crouched_low_with_faces_hidden": true,
+      "outboard_motors_and_white_spray_plumes": true,
+      "top_45_percent_dark_and_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. No text, letters, numbers, logos, watermarks, signage, number plates, or flags are visible. The red-and-white object at lower left is a fixed course buoy, not a flag."
+  }
+}
