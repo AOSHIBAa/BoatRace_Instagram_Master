@@ -1,0 +1,27 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 editorial cover image with future title overlay\nPrimary request: A photorealistic Japanese kyotei motorboat racing scene on a wide lake course with soft mountains on the horizon, an overcast sky, and gentle swell.\nScene/backdrop: Open lake racing course, subdued natural atmosphere, soft distant mountain silhouettes.\nSubject: Two or three authentic Japanese kyotei racing boats in a close pack exiting a turn, all following the same rules: each is a single-seat racing boat about 3 m long, flat, low and long relative to its racer, with a light white or pale-grey hull and fully OPEN cockpit. No canopy, no roof, no windshield bubble. Each racer crouches or kneels very low inside the open cockpit, leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and completely plain racing suit; faces hidden. Each boat has exactly one outboard motor at the stern and a large white spray plume behind it.\nStyle/medium: convincing high-end sports photography, realistic water, spray, boat proportions, materials, and optics.\nComposition/framing: portrait 4:5. Keep all boats in the lower half. Keep the top 45% dark, calm, and uncluttered as clean negative space for a title to be overlaid later.\nLighting/mood: soft diffuse overcast daylight, dramatic but natural.\nText: none.\nConstraints: every craft must unmistakably be a Japanese kyotei racing boat, not an offshore powerboat and not an F1 tunnel boat. Only plain, non-identifiable racers. No canopy, roof, windshield bubble, enclosed cockpit, or visible face.\nAvoid: absolutely no text, letters, digits, numbers, logos, brands, watermarks, signage, number plates, flags, banners, lane markers bearing symbols, recognizable people, buildings with signs, or decorative markings that resemble writing.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "wide_lake_soft_mountains_overcast_sky": true,
+      "two_or_three_boats_in_close_pack_exiting_turn": true,
+      "authentic_open_cockpit_kyotei_boats": true,
+      "racers_crouched_low_with_faces_hidden": true,
+      "one_outboard_motor_per_boat_and_white_spray_plumes": true,
+      "top_45_percent_dark_and_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows three low, long, open-cockpit kyotei boats in a close pack exiting a turn, with crouched racers, one stern outboard motor per boat, and broad white spray plumes. The upper area is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
