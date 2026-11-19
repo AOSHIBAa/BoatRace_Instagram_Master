@@ -1,0 +1,25 @@
+{
+  "slides": [
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    }
+  ],
+  "notes": "組み込み画像生成ツールで各スライドを1回生成。spec.mdとexpected.jsonに基づき、全テキストを文字単位で目視照合し、4枚とも一致と判断した。禁止語、追加文字、ロゴ、透かし、旗、顔、箇条書きは見当たらない。s1は指定のcover.pngの同じ3艇と風景を維持。"
+}
