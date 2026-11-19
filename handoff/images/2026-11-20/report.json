@@ -1,0 +1,27 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 Instagram cover image\nPrimary request: Photorealistic Japanese-style kyotei motorboat racing at night under bright stadium floodlights, with distant city lights softly blurred and calm dark water.\nScene/backdrop: Night race course, bright overhead stadium floodlights, faraway defocused city lights, calm dark water.\nSubject: Exactly one authentic Japanese kyotei racing boat running straight at full speed, seen from a low side angle. The boat is about 3 meters long, flat, low, and long relative to the racer, with a plain light white or pale-gray hull. It has a completely open single-seat cockpit: no canopy, no roof, no windshield, no bubble. One racer crouches or kneels very low inside, leaning forward, both hands on a small steering wheel. The racer wears a plain full-face helmet and plain racing suit; the face is not visible. Exactly one outboard motor is mounted on the stern, producing a large white spray plume trailing behind.\nStyle/medium: High-end photorealistic sports photography, realistic proportions and mechanics.\nComposition/framing: Portrait 4:5. Boat entirely in the lower half. The upper 45 percent must remain dark, calm, spacious, and uncluttered for a later title overlay. Dynamic low side camera angle, boat moving straight.\nLighting/mood: Dramatic stadium floodlights, cool night ambience, realistic reflections, energetic but clean.\nText: none.\nConstraints: No recognizable real person. Boat must unmistakably be a small Japanese kyotei racing boat, not an offshore powerboat, hydroplane canopy boat, or F1 tunnel boat. Open cockpit and exactly one stern outboard motor must be clearly visible.\nAvoid: absolutely no text, letters, numbers, logos, watermarks, signage, number plates, branding, emblems, or flags anywhere; no visible face; no extra boats; no canopy, roof, windshield bubble, enclosed cockpit, offshore powerboat form, or F1 tunnel hull.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "night_race_with_stadium_and_city_lights": true,
+      "single_authentic_open_cockpit_kyotei_boat": true,
+      "racer_crouched_low_with_face_hidden": true,
+      "one_outboard_motor_and_white_spray_plume": true,
+      "boat_running_straight_from_low_side_angle": true,
+      "top_45_percent_dark_and_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows one low, long, light-colored open-cockpit kyotei racing boat running straight at night, with a crouched racer whose face is hidden, one stern outboard motor, and a broad white spray plume. Stadium floodlights and softly blurred distant city lights illuminate calm dark water, while the upper area remains dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
