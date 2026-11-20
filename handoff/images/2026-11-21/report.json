@@ -1,0 +1,27 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 editorial cover image for a Japanese motorboat-racing post\nPrimary request: A photorealistic late-afternoon Japanese kyotei race on an urban riverside course, with warm low sunlight and light ripples.\nScene/backdrop: subdued urban riverside course; keep the top 45% dark, visually quiet, uncluttered, and free of signage so a title can be overlaid later.\nSubject: one authentic Japanese kyotei racing boat banking into a tight left turn around one orange-and-white cylindrical turn buoy. The boat is a single-seat racing craft about 3 meters long, flat, low, and long relative to the racer, with a white or pale-grey hull. It has an OPEN cockpit: no canopy, no roof, no windshield bubble. The racer crouches or kneels very low inside, leaning forward with both hands on a small steering wheel, wearing a completely plain full-face helmet and plain racing suit; face is not visible. Exactly one outboard motor is mounted on the stern, producing a large white spray plume that curves outward behind the turn.\nComposition/framing: portrait 4:5; boat and buoy entirely in the lower half; dynamic turning angle; generous dark negative space across the upper 45%.\nLighting/mood: warm low late-afternoon sunlight, dramatic but realistic, natural water reflections.\nConstraints: unmistakably kyotei, not an offshore powerboat and not an F1 tunnel boat; no recognizable real person.\nAvoid: absolutely no text, letters, digits, numbers, logos, branding, watermarks, signage, number plates, flags, pennants, readable markings, extra boats, canopy, roof, windshield bubble, offshore powerboat styling, F1 tunnel hull styling.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "late_afternoon_urban_riverside_course": true,
+      "single_authentic_open_cockpit_kyotei_boat": true,
+      "racer_crouched_low_with_face_hidden": true,
+      "one_outboard_motor_and_white_spray_plume": true,
+      "tight_left_turn_around_orange_white_cylindrical_buoy": true,
+      "top_45_percent_dark_and_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows one low, long, light-colored open-cockpit kyotei racing boat banking around an orange-and-white cylindrical buoy in warm late-afternoon light, with a crouched racer whose face is hidden, one stern outboard motor, and a broad curved white spray plume. The upper area is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
