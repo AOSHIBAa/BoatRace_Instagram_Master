@@ -1,0 +1,26 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image, 4:5\nPrimary request: A photorealistic Japanese-style kyotei motorboat racing scene on a coastal course beneath a large dramatic stormy sky, with strong wind and choppy water. Two or three boats travel in a close pack while exiting a turn.\nSubject: Every boat is a true Japanese kyotei racing boat: a single-seat craft about 3 meters long, flat, low, and long relative to the racer, with a light white or pale-grey hull. Each has an OPEN cockpit with no canopy, no roof, and no windshield bubble. Each racer crouches or kneels very low inside, leans forward, and holds a small steering wheel with both hands. Racers wear plain full-face helmets and plain racing suits; faces are completely hidden. Each boat has exactly one outboard motor at the stern and a large white spray plume behind it.\nComposition/framing: vertical 4:5. Keep the racing boats in the lower half. Reserve the top 45% as dark, uncluttered dramatic sky suitable for later title overlay, but do not add any title. Dynamic sports-photography perspective.\nLighting/mood: windswept, intense, cinematic natural light, realistic spray and waves.\nText: none.\nConstraints: no recognizable real person; no canopy, roof, windshield bubble, offshore powerboat, or F1 tunnel boat.\nAvoid: absolutely no text, letters, numbers, logos, watermarks, signage, number plates, flags, emblems, sponsor marks, or readable markings anywhere, including on boats, helmets, suits, shoreline, or sky.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "coastal_course_with_dramatic_sky_strong_wind_and_choppy_water": true,
+      "three_authentic_open_cockpit_kyotei_boats_in_close_pack": true,
+      "racers_crouched_low_with_faces_hidden": true,
+      "one_outboard_motor_per_boat_and_white_spray_plumes": true,
+      "top_45_percent_dark_and_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows three low, long, light-colored, open-cockpit kyotei racing boats in a close pack exiting a turn on choppy coastal water beneath a large dark stormy sky. Each racer is crouched low with a plain full-face helmet and hidden face, and each boat has one stern outboard motor with white spray. The upper 45% is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
