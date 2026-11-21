@@ -1,10 +1,30 @@
 {
   "slides": [
-    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s3.png", "size_px": "1122x1402", "attempts": 3},
-    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 6
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 6
+    }
   ],
-  "notes": "Built-in image generation tool used for all slides. Visually compared every text element against expected.json character by character. s1, s2, and s4 appear to match all specified text. s3 was regenerated twice because the final character of 山下拓巳 appeared closer to 己 than 巳; after the maximum 3 attempts, the distinction remains visually uncertain, so exact agreement for that character cannot be claimed. s5 was regenerated twice because the four leading U+30FB middle dots were rendered like round bullets with a visible gap; after the maximum 3 attempts, they still appear like round bullet marks rather than the required Japanese middle dot, so T4-T7 do not fully match. All other visible s3 and s5 text appears to match. No forbidden words, extra labels, logos, watermarks, flags, or visible faces were found."
+  "notes": "Built-in image generation tool used. Per the follow-up request, only s3.png and s5.png were regenerated, with three additional attempts each (six cumulative attempts); s1.png, s2.png, and s4.png were not changed. Every visible text item was compared against expected.json. On s3, all other text remains correct, but after the allowed three new attempts the final glyph in 山下拓巳 still looks visually ambiguous and may still be read as 己 rather than the required 巳; exact agreement cannot be claimed. On s5, all other text remains correct, but after the allowed three new attempts the T4-T7 prefixes still appear as round bullet marks with list-style spacing rather than inline full-width U+30FB middle dots with no following space; exact agreement cannot be claimed. No forbidden words, extra labels, logos, watermarks, flags, or visible faces were found."
 }
