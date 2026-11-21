@@ -1,0 +1,10 @@
+{
+  "slides": [
+    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s3.png", "size_px": "1122x1402", "attempts": 3},
+    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
+    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+  ],
+  "notes": "Built-in image generation tool used for all slides. Visually compared every text element against expected.json character by character. s1, s2, and s4 appear to match all specified text. s3 was regenerated twice because the final character of 山下拓巳 appeared closer to 己 than 巳; after the maximum 3 attempts, the distinction remains visually uncertain, so exact agreement for that character cannot be claimed. s5 was regenerated twice because the four leading U+30FB middle dots were rendered like round bullets with a visible gap; after the maximum 3 attempts, they still appear like round bullet marks rather than the required Japanese middle dot, so T4-T7 do not fully match. All other visible s3 and s5 text appears to match. No forbidden words, extra labels, logos, watermarks, flags, or visible faces were found."
+}
