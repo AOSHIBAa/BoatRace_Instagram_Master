@@ -1,10 +1,30 @@
 {
   "slides": [
-    {"file": "s1.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s2.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s3.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s4.png", "size_px": "1122x1402", "attempts": 1},
-    {"file": "s5.png", "size_px": "1122x1402", "attempts": 3}
+    {
+      "file": "s1.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s2.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s3.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s4.png",
+      "size_px": "1122x1402",
+      "attempts": 1
+    },
+    {
+      "file": "s5.png",
+      "size_px": "1122x1402",
+      "attempts": 6
+    }
   ],
-  "notes": "Built-in image generation tool used for all slides. I visually compared every text item against expected.json. Slides s1-s4 appear character-for-character correct, with the required names, punctuation, spacing, colors, and layout. For s5, I made the maximum three attempts. The final image contains all requested wording and internal middle dots, but the four leading marks still look like round bullet marks with visible following space rather than unambiguously like the required Japanese middle dot U+30FB with no following space. This remains unresolved and is reported honestly. No forbidden words, logos, watermarks, flags, parentheses, question marks, or human faces were observed."
+  "notes": "Built-in image generation tool used. Slides s1-s4 were not changed. For s5, three additional regeneration attempts were made and the final image was compared visually against expected.json. T1 is now the requested yellow band label with black text, and T2 is #9fb3c8. All requested wording, internal middle dots, colors, and layout appear correct. However, after the maximum three additional attempts, the four leading marks in T4-T7 still look like round bullet marks with visible following space rather than unambiguously like Japanese middle dot U+30FB with no following space. This remains unresolved and is reported honestly. No forbidden words, logos, watermarks, flags, parentheses, question marks, or human faces were observed."
 }
