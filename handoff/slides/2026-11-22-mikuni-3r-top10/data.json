@@ -1,0 +1,286 @@
+{
+ "venue": "三国",
+ "period_start": "2026-04-05",
+ "n_motors": 60,
+ "motor_2r_median": 34.51,
+ "race3": [
+  {
+   "boat": 1,
+   "name": "真庭明志",
+   "class": "A2",
+   "motor": "48",
+   "rank": 7,
+   "motor_2r": 33.33,
+   "hidden": true,
+   "t": -6.52,
+   "starts": 164
+  },
+  {
+   "boat": 2,
+   "name": "後藤盛也",
+   "class": "B1",
+   "motor": "45",
+   "rank": 2,
+   "motor_2r": 35.26,
+   "hidden": false,
+   "t": -9.98,
+   "starts": 156
+  },
+  {
+   "boat": 3,
+   "name": "柳沢一",
+   "class": "A1",
+   "motor": "55",
+   "rank": 3,
+   "motor_2r": 32.74,
+   "hidden": true,
+   "t": -9.58,
+   "starts": 155
+  },
+  {
+   "boat": 4,
+   "name": "川崎誠志",
+   "class": "B1",
+   "motor": "65",
+   "rank": 41,
+   "motor_2r": 30.46,
+   "hidden": false,
+   "t": 1.24,
+   "starts": 158
+  },
+  {
+   "boat": 5,
+   "name": "藤原孝斗",
+   "class": "B1",
+   "motor": "63",
+   "rank": 17,
+   "motor_2r": 33.13,
+   "hidden": true,
+   "t": -3.72,
+   "starts": 153
+  },
+  {
+   "boat": 6,
+   "name": "松田祐季",
+   "class": "A1",
+   "motor": "43",
+   "rank": 10,
+   "motor_2r": 44.19,
+   "hidden": false,
+   "t": -4.37,
+   "starts": 156
+  }
+ ],
+ "top10_by_race": {
+  "3": [
+   7,
+   2,
+   3,
+   10
+  ],
+  "4": [
+   5,
+   4
+  ],
+  "5": [
+   9,
+   1,
+   6
+  ],
+  "7": [
+   8
+  ],
+  "9": [
+   4,
+   7
+  ],
+  "10": [
+   10
+  ],
+  "11": [
+   3
+  ],
+  "12": [
+   8
+  ]
+ },
+ "day1": [
+  {
+   "race": 1,
+   "boat": 1,
+   "entrance": "1",
+   "name": "松田祐季",
+   "motor": "43",
+   "rank": 10,
+   "ex": 6.63,
+   "ex_rank": 2,
+   "pos": "1",
+   "tansho": [
+    "1",
+    100
+   ],
+   "sanrentan": [
+    "1-5-6",
+    4180
+   ]
+  },
+  {
+   "race": 1,
+   "boat": 4,
+   "entrance": "4",
+   "name": "真庭明志",
+   "motor": "48",
+   "rank": 7,
+   "ex": 6.61,
+   "ex_rank": 1,
+   "pos": "5",
+   "tansho": [
+    "1",
+    100
+   ],
+   "sanrentan": [
+    "1-5-6",
+    4180
+   ]
+  },
+  {
+   "race": 2,
+   "boat": 5,
+   "entrance": "5",
+   "name": "後藤盛也",
+   "motor": "45",
+   "rank": 2,
+   "ex": 6.56,
+   "ex_rank": 2,
+   "pos": "1",
+   "tansho": [
+    "5",
+    1200
+   ],
+   "sanrentan": [
+    "5-3-1",
+    23990
+   ]
+  },
+  {
+   "race": 6,
+   "boat": 6,
+   "entrance": "6",
+   "name": "柳沢一",
+   "motor": "55",
+   "rank": 3,
+   "ex": 6.67,
+   "ex_rank": 4,
+   "pos": "2",
+   "tansho": [
+    "3",
+    340
+   ],
+   "sanrentan": [
+    "3-6-5",
+    12600
+   ]
+  },
+  {
+   "race": 8,
+   "boat": 5,
+   "entrance": "5",
+   "name": "真庭明志",
+   "motor": "48",
+   "rank": 7,
+   "ex": 6.7,
+   "ex_rank": 6,
+   "pos": "6",
+   "tansho": [
+    "2",
+    170
+   ],
+   "sanrentan": [
+    "2-1-3",
+    800
+   ]
+  },
+  {
+   "race": 10,
+   "boat": 1,
+   "entrance": "1",
+   "name": "後藤盛也",
+   "motor": "45",
+   "rank": 2,
+   "ex": 6.57,
+   "ex_rank": 2,
+   "pos": null,
+   "tansho": [
+    "2",
+    820
+   ],
+   "sanrentan": [
+    "2-5-3",
+    16720
+   ]
+  },
+  {
+   "race": 12,
+   "boat": 4,
+   "entrance": "4",
+   "name": "松田祐季",
+   "motor": "43",
+   "rank": 10,
+   "ex": 6.68,
+   "ex_rank": 2,
+   "pos": "5",
+   "tansho": [
+    "1",
+    140
+   ],
+   "sanrentan": [
+    "1-2-5",
+    2000
+   ]
+  }
+ ],
+ "today_top4": [
+  {
+   "race": 3,
+   "boat": 1,
+   "name": "真庭明志",
+   "motor": "48"
+  },
+  {
+   "race": 3,
+   "boat": 2,
+   "name": "後藤盛也",
+   "motor": "45"
+  },
+  {
+   "race": 3,
+   "boat": 3,
+   "name": "柳沢一",
+   "motor": "55"
+  },
+  {
+   "race": 3,
+   "boat": 6,
+   "name": "松田祐季",
+   "motor": "43"
+  },
+  {
+   "race": 9,
+   "boat": 3,
+   "name": "真庭明志",
+   "motor": "48"
+  },
+  {
+   "race": 10,
+   "boat": 2,
+   "name": "松田祐季",
+   "motor": "43"
+  },
+  {
+   "race": 11,
+   "boat": 4,
+   "name": "柳沢一",
+   "motor": "55"
+  }
+ ]
+}
