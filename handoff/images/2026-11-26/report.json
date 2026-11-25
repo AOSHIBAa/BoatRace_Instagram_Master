@@ -1,0 +1,27 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image, 4:5\nPrimary request: A photorealistic Japanese kyotei motorboat racing scene on a wide lake course, with soft mountains on the horizon, an overcast sky, and gentle swell.\nScene/backdrop: wide Japanese lake, subdued distant mountains, overcast atmospheric sky.\nSubject: one authentic kyotei single-seat racing boat, about 3 meters long, flat, low, and long relative to the racer; light white or pale-grey hull. OPEN cockpit only: no canopy, no roof, no windshield or bubble. A racer crouches or kneels very low inside, leaning forward with both hands on a small steering wheel; plain full-face helmet and plain racing suit; face fully hidden. One outboard motor mounted at the stern, creating a large white spray plume. The boat banks into a tight left turn around one orange-and-white cylindrical turn buoy, with spray curving outward.\nComposition/framing: portrait 4:5; boat and buoy entirely in the lower half; reserve the top 45 percent as dark, uncluttered negative space for later title overlay; dynamic but realistic sports photography.\nLighting/mood: overcast, dramatic, restrained, natural photographic lighting.\nConstraints: the boat must unmistakably be a Japanese kyotei racing boat, not an offshore powerboat and not an F1 tunnel boat; no recognizable real person; only one boat; no extra boats.\nAvoid: absolutely no text, letters, digits, numbers, logos, brands, watermarks, signage, number plates, banners, emblems, symbols, or flags anywhere; no markings on helmet, suit, hull, buoy, motor, background, or water; no canopy; no roof; no windshield bubble.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "wide_lake_soft_mountains_overcast_sky_and_gentle_swell": true,
+      "authentic_low_long_light_colored_open_cockpit_kyotei_boat": true,
+      "racer_crouched_low_with_plain_helmet_and_suit_and_face_hidden": true,
+      "single_stern_outboard_motor_and_large_white_spray_plume": true,
+      "tight_left_turn_around_orange_and_white_cylindrical_buoy": true,
+      "boat_in_lower_half_and_top_45_percent_dark_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows one low, long, light-colored, open-cockpit kyotei racing boat banking around an orange-and-white cylindrical buoy on a wide lake beneath an overcast sky, with soft mountains on the horizon. The racer is crouched low in a plain full-face helmet and plain suit with the face hidden. One stern outboard motor and a large white spray plume are visible. The boat remains in the lower half, while the upper 45% is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
