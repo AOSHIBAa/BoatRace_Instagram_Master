@@ -1,0 +1,28 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical 4:5 editorial cover image for a Japanese boat-racing social post\nPrimary request: A photorealistic late-afternoon Japanese kyotei motorboat race on an urban riverside course with warm low sunlight and light ripples. Two or three boats form a close pack exiting a turn.\nScene/backdrop: urban riverside racecourse, subtly atmospheric and unbranded, warm late-day light; keep the top 45% dark, calm, and visually uncluttered for later title overlay.\nSubject: Authentic Japanese kyotei racing boats, each a single-seat craft about 3 m long, flat, low, and long relative to its racer, with a white or pale-grey hull. Each has an open cockpit only—no canopy, no roof, no bubble windshield. Each racer crouches or kneels very low, leans forward, and holds a small steering wheel with both hands. Racers wear plain full-face helmets and plain racing suits; faces are fully hidden. Exactly one outboard motor at each stern creates a large white spray plume.\nStyle/medium: high-end natural sports photography, believable proportions and mechanics, crisp water spray, no stylization.\nComposition/framing: portrait 4:5; boats entirely in the lower half, dynamic close pack leaving the turn; top 45% remains dark and uncluttered.\nLighting/mood: warm low late-afternoon sunlight, energetic but natural.\nText (verbatim): none.\nConstraints: no recognizable real person; all boats must clearly read as authentic Japanese kyotei craft rather than offshore powerboats or F1 tunnel boats.\nAvoid: absolutely no text, letters, digits, numbers, logos, branding, watermarks, signage, boat-number plates, flags, banners, emblems, decals, or readable markings anywhere. No canopy, roof, enclosed cockpit, windshield bubble, offshore powerboat form, or F1 tunnel boat form.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "late_afternoon_warm_low_sunlight": true,
+      "urban_riverside_course_and_light_ripples": true,
+      "two_or_three_boats_in_close_pack_exiting_turn": true,
+      "authentic_low_long_open_cockpit_kyotei_boats": true,
+      "racers_crouched_low_with_faces_hidden": true,
+      "one_outboard_motor_per_boat_and_white_spray_plumes": true,
+      "boats_in_lower_half_and_top_45_percent_dark_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows three low, long, light-colored, open-cockpit kyotei racing boats in a close pack exiting a turn on an urban riverside course in warm late-afternoon light. All racers crouch low in plain full-face helmets with faces hidden. Each boat has one stern outboard motor and a white spray plume. The boats occupy the lower half and the upper 45% is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
