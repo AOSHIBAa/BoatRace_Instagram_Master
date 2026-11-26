@@ -1,0 +1,27 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image\nPrimary request: A photorealistic Japanese kyotei motorboat-racing scene on a wide lake course, with soft mountains on the horizon, an overcast sky, and a gentle swell.\nScene/backdrop: broad open lake, subdued distant mountains, cloudy dark sky, natural water texture.\nSubject: two or three authentic Japanese kyotei racing boats in a close pack exiting a turn. Every boat is a single-seat racing boat about 3 meters long, flat, low, and long relative to its racer, with a light white or pale-grey hull. Each has an OPEN cockpit with absolutely no canopy, roof, or windshield bubble. Each racer crouches or kneels very low, leaning forward, both hands on a small steering wheel, wearing a plain full-face helmet and plain racing suit; no face visible. Exactly one outboard motor on each stern, with a large white spray plume behind it.\nStyle/medium: highly realistic sports photography, authentic proportions and mechanics, natural atmospheric detail.\nComposition/framing: portrait 4:5. Place the boats entirely in the lower half. Keep the top 45 percent dark, uncluttered negative space for a later title overlay. Dynamic turn-exit motion while preserving clear boat anatomy.\nLighting/mood: cool, dramatic overcast daylight, restrained contrast.\nText (verbatim): none.\nConstraints: no recognizable real person; all boats must follow the same authentic kyotei construction; faces fully hidden.\nAvoid: absolutely no text, letters, digits, numbers, logos, brand marks, watermarks, signage, number plates, flags, banners, typographic shapes, offshore powerboats, F1 tunnel boats, enclosed cockpits, canopies, roofs, windshield bubbles, extra motors.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "visual inspection of the generated image",
+    "result": "pass",
+    "checks": {
+      "photorealistic_vertical_4_5_composition": true,
+      "wide_lake_soft_mountains_overcast_sky_and_gentle_swell": true,
+      "two_or_three_authentic_low_long_light_colored_open_cockpit_kyotei_boats": true,
+      "racers_crouched_low_with_plain_helmets_and_suits_and_faces_hidden": true,
+      "one_stern_outboard_motor_per_boat_and_large_white_spray_plumes": true,
+      "close_pack_exiting_the_turn": true,
+      "boats_in_lower_half_and_top_45_percent_dark_uncluttered": true,
+      "no_text_letters_or_numbers": true,
+      "no_logos_or_watermarks": true,
+      "no_signage_or_number_plates": true,
+      "no_flags": true,
+      "no_recognizable_real_person": true
+    },
+    "notes": "Visually inspected at full image view. The image shows three low, long, light-colored, open-cockpit kyotei racing boats traveling in a close pack on a wide lake beneath an overcast sky, with soft mountains on the horizon. Each racer is crouched low in a plain full-face helmet and plain suit with the face hidden. One stern outboard motor and a large white spray plume are visible for each boat. The boats remain in the lower half, while the upper 45% is dark and uncluttered. No text, letters, digits, numbers, logos, watermarks, signage, number plates, flags, or recognizable real person are visible."
+  }
+}
