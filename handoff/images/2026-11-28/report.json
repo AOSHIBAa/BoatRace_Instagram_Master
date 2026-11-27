@@ -1,0 +1,18 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image, 4:5\nPrimary request: A photorealistic Japanese kyotei motorboat racing scene during a late-afternoon race on an urban riverside course, with warm low sunlight and light ripples.\nScene/backdrop: Urban riverside watercourse, visually quiet and darkened in the upper 45% to provide clean negative space for a later title; no readable structures or signage.\nSubject: One authentic Japanese kyotei racing boat running straight at full speed, viewed from a low side angle. The single-seat boat is about 3 meters long, flat, low, and long relative to the racer, with a white or pale-gray hull. It has an OPEN cockpit with absolutely no canopy, roof, or windshield bubble. The racer crouches or kneels very low in the open cockpit, leans forward, and holds a small steering wheel with both hands. The racer wears a plain full-face helmet and plain racing suit; face is fully hidden. Exactly one outboard motor is mounted on the stern, with a large white spray plume trailing behind.\nStyle/medium: High-end realistic sports photography, natural proportions and convincing water physics.\nComposition/framing: Portrait 4:5. Boat entirely in the lower half. Upper 45% dark, simple, uncluttered negative space. Dynamic but clear side profile, spray trailing behind.\nLighting/mood: Warm late-afternoon low sunlight; dramatic yet natural.\nConstraints: The craft must read unmistakably as a Japanese kyotei racing boat, not an offshore powerboat and not an F1 tunnel boat. No recognizable real person.\nAvoid: Absolutely no text, letters, numbers, logos, watermarks, signage, number plates, flags, emblems, symbols, labels, or typography anywhere. No writing on hull, helmet, suit, motor, buildings, or course. No extra boats. No canopy, roof, windshield bubble, enclosed cockpit, offshore powerboat, or tunnel-hull form.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "目視確認",
+    "result": "pass",
+    "details": [
+      "縦4:5の構図で、ボートが下半分、上部約45%が暗く整理された余白になっている。",
+      "白系の低く長い単座艇、開放型コックピット、前傾したレーサー、船尾の船外機1基、大きな水しぶきを確認した。",
+      "レーサーの顔は見えず、特定可能な実在人物ではない。",
+      "画像内に文字、数字、ロゴ、透かし、看板、艇番プレート、旗は見当たらない。"
+    ]
+  }
+}
