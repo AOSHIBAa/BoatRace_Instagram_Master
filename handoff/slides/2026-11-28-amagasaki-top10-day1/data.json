@@ -1,0 +1,498 @@
+{
+ "venue": "尼崎",
+ "period_start": "2026-04-17",
+ "n_motors": 63,
+ "motor_2r_median": 33.53,
+ "races_day1": 12,
+ "top10": [
+  {
+   "rank": 1,
+   "motor": "56",
+   "motor_2r_prog28": "44.51",
+   "motor_2r_prog27": "44.51",
+   "motor_2r_json": 44.51,
+   "name": "藤岡俊介",
+   "class": "A1",
+   "ride_list": [
+    {
+     "race": 1,
+     "boat": 3,
+     "entrance": "3",
+     "ex": 6.84,
+     "ex_rank": 3,
+     "pos": "2",
+     "sanrentan": [
+      "2-3-1",
+      3150
+     ]
+    },
+    {
+     "race": 11,
+     "boat": 1,
+     "entrance": "1",
+     "ex": 6.83,
+     "ex_rank": 3,
+     "pos": "2",
+     "sanrentan": [
+      "2-1-3",
+      3200
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 0,
+   "top2": 2,
+   "wins": 0
+  },
+  {
+   "rank": 2,
+   "motor": "23",
+   "motor_2r_prog28": "46.67",
+   "motor_2r_prog27": "46.67",
+   "motor_2r_json": 46.67,
+   "name": "上原健次",
+   "class": "A2",
+   "ride_list": [
+    {
+     "race": 9,
+     "boat": 2,
+     "entrance": "2",
+     "ex": 6.77,
+     "ex_rank": 1,
+     "pos": "1",
+     "sanrentan": [
+      "2-1-3",
+      6840
+     ]
+    }
+   ],
+   "rides": 1,
+   "ex_top2": 1,
+   "top2": 1,
+   "wins": 1
+  },
+  {
+   "rank": 3,
+   "motor": "61",
+   "motor_2r_prog28": "46.29",
+   "motor_2r_prog27": "46.29",
+   "motor_2r_json": 46.29,
+   "name": "吉川元浩",
+   "class": "A1",
+   "ride_list": [
+    {
+     "race": 5,
+     "boat": 3,
+     "entrance": "3",
+     "ex": 6.74,
+     "ex_rank": 1,
+     "pos": "1",
+     "sanrentan": [
+      "3-4-6",
+      1110
+     ]
+    },
+    {
+     "race": 12,
+     "boat": 1,
+     "entrance": "1",
+     "ex": 6.78,
+     "ex_rank": 1,
+     "pos": "2",
+     "sanrentan": [
+      "2-1-5",
+      7930
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 2,
+   "top2": 2,
+   "wins": 1
+  },
+  {
+   "rank": 4,
+   "motor": "63",
+   "motor_2r_prog28": null,
+   "motor_2r_prog27": null,
+   "motor_2r_json": 38.75,
+   "name": null,
+   "class": null,
+   "ride_list": [],
+   "rides": 0,
+   "ex_top2": 0,
+   "top2": 0,
+   "wins": 0
+  },
+  {
+   "rank": 5,
+   "motor": "54",
+   "motor_2r_prog28": "41.32",
+   "motor_2r_prog27": "41.32",
+   "motor_2r_json": 41.32,
+   "name": "山下昂大",
+   "class": "A2",
+   "ride_list": [
+    {
+     "race": 3,
+     "boat": 2,
+     "entrance": "4",
+     "ex": 6.83,
+     "ex_rank": 4,
+     "pos": "2",
+     "sanrentan": [
+      "1-2-6",
+      1070
+     ]
+    },
+    {
+     "race": 11,
+     "boat": 5,
+     "entrance": "5",
+     "ex": 6.85,
+     "ex_rank": 4,
+     "pos": "4",
+     "sanrentan": [
+      "2-1-3",
+      3200
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 0,
+   "top2": 1,
+   "wins": 0
+  },
+  {
+   "rank": 6,
+   "motor": "37",
+   "motor_2r_prog28": "37.50",
+   "motor_2r_prog27": "37.50",
+   "motor_2r_json": 37.5,
+   "name": "秦英悟",
+   "class": "A1",
+   "ride_list": [
+    {
+     "race": 5,
+     "boat": 4,
+     "entrance": "4",
+     "ex": 6.78,
+     "ex_rank": 2,
+     "pos": "2",
+     "sanrentan": [
+      "3-4-6",
+      1110
+     ]
+    },
+    {
+     "race": 11,
+     "boat": 2,
+     "entrance": "2",
+     "ex": 6.82,
+     "ex_rank": 1,
+     "pos": "1",
+     "sanrentan": [
+      "2-1-3",
+      3200
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 2,
+   "top2": 2,
+   "wins": 1
+  },
+  {
+   "rank": 7,
+   "motor": "12",
+   "motor_2r_prog28": "39.88",
+   "motor_2r_prog27": "39.88",
+   "motor_2r_json": 39.88,
+   "name": "夏山亮平",
+   "class": "B1",
+   "ride_list": [
+    {
+     "race": 3,
+     "boat": 4,
+     "entrance": "6",
+     "ex": 6.86,
+     "ex_rank": 5,
+     "pos": "5",
+     "sanrentan": [
+      "1-2-6",
+      1070
+     ]
+    },
+    {
+     "race": 9,
+     "boat": 3,
+     "entrance": "3",
+     "ex": 6.91,
+     "ex_rank": 6,
+     "pos": "3",
+     "sanrentan": [
+      "2-1-3",
+      6840
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 0,
+   "top2": 0,
+   "wins": 0
+  },
+  {
+   "rank": 8,
+   "motor": "4",
+   "motor_2r_prog28": "43.20",
+   "motor_2r_prog27": "43.20",
+   "motor_2r_json": 43.2,
+   "name": "川島拓郎",
+   "class": "B1",
+   "ride_list": [
+    {
+     "race": 6,
+     "boat": 2,
+     "entrance": "3",
+     "ex": 6.87,
+     "ex_rank": 6,
+     "pos": "3",
+     "sanrentan": [
+      "1-5-2",
+      1850
+     ]
+    },
+    {
+     "race": 11,
+     "boat": 6,
+     "entrance": "6",
+     "ex": 6.89,
+     "ex_rank": 6,
+     "pos": "6",
+     "sanrentan": [
+      "2-1-3",
+      3200
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 0,
+   "top2": 0,
+   "wins": 0
+  },
+  {
+   "rank": 9,
+   "motor": "36",
+   "motor_2r_prog28": "40.24",
+   "motor_2r_prog27": "40.24",
+   "motor_2r_json": 40.24,
+   "name": "吉田和仁",
+   "class": "B1",
+   "ride_list": [
+    {
+     "race": 4,
+     "boat": 1,
+     "entrance": "1",
+     "ex": 6.83,
+     "ex_rank": 3,
+     "pos": "1",
+     "sanrentan": [
+      "1-6-2",
+      6380
+     ]
+    }
+   ],
+   "rides": 1,
+   "ex_top2": 0,
+   "top2": 1,
+   "wins": 1
+  },
+  {
+   "rank": 10,
+   "motor": "31",
+   "motor_2r_prog28": "36.63",
+   "motor_2r_prog27": "36.63",
+   "motor_2r_json": 36.63,
+   "name": "川口貴久",
+   "class": "B1",
+   "ride_list": [
+    {
+     "race": 1,
+     "boat": 2,
+     "entrance": "2",
+     "ex": 6.88,
+     "ex_rank": 5,
+     "pos": "1",
+     "sanrentan": [
+      "2-3-1",
+      3150
+     ]
+    },
+    {
+     "race": 9,
+     "boat": 6,
+     "entrance": "6",
+     "ex": 6.88,
+     "ex_rank": 5,
+     "pos": "6",
+     "sanrentan": [
+      "2-1-3",
+      6840
+     ]
+    }
+   ],
+   "rides": 2,
+   "ex_top2": 0,
+   "top2": 1,
+   "wins": 1
+  }
+ ],
+ "today": [
+  {
+   "race": 1,
+   "boat": 3,
+   "name": "秦英悟",
+   "class": "A1",
+   "motor": "37",
+   "rank": 6,
+   "motor_2r": "37.50"
+  },
+  {
+   "race": 3,
+   "boat": 4,
+   "name": "上原健次",
+   "class": "A2",
+   "motor": "23",
+   "rank": 2,
+   "motor_2r": "46.67"
+  },
+  {
+   "race": 3,
+   "boat": 5,
+   "name": "川島拓郎",
+   "class": "B1",
+   "motor": "4",
+   "rank": 8,
+   "motor_2r": "43.20"
+  },
+  {
+   "race": 4,
+   "boat": 1,
+   "name": "夏山亮平",
+   "class": "B1",
+   "motor": "12",
+   "rank": 7,
+   "motor_2r": "39.88"
+  },
+  {
+   "race": 4,
+   "boat": 4,
+   "name": "吉田和仁",
+   "class": "B1",
+   "motor": "36",
+   "rank": 9,
+   "motor_2r": "40.24"
+  },
+  {
+   "race": 4,
+   "boat": 5,
+   "name": "吉川元浩",
+   "class": "A1",
+   "motor": "61",
+   "rank": 3,
+   "motor_2r": "46.29"
+  },
+  {
+   "race": 5,
+   "boat": 4,
+   "name": "藤岡俊介",
+   "class": "A1",
+   "motor": "56",
+   "rank": 1,
+   "motor_2r": "44.51"
+  },
+  {
+   "race": 6,
+   "boat": 3,
+   "name": "川口貴久",
+   "class": "B1",
+   "motor": "31",
+   "rank": 10,
+   "motor_2r": "36.63"
+  },
+  {
+   "race": 7,
+   "boat": 6,
+   "name": "山下昂大",
+   "class": "A2",
+   "motor": "54",
+   "rank": 5,
+   "motor_2r": "41.32"
+  },
+  {
+   "race": 8,
+   "boat": 6,
+   "name": "秦英悟",
+   "class": "A1",
+   "motor": "37",
+   "rank": 6,
+   "motor_2r": "37.50"
+  },
+  {
+   "race": 9,
+   "boat": 4,
+   "name": "吉川元浩",
+   "class": "A1",
+   "motor": "61",
+   "rank": 3,
+   "motor_2r": "46.29"
+  },
+  {
+   "race": 10,
+   "boat": 3,
+   "name": "上原健次",
+   "class": "A2",
+   "motor": "23",
+   "rank": 2,
+   "motor_2r": "46.67"
+  },
+  {
+   "race": 10,
+   "boat": 6,
+   "name": "藤岡俊介",
+   "class": "A1",
+   "motor": "56",
+   "rank": 1,
+   "motor_2r": "44.51"
+  },
+  {
+   "race": 11,
+   "boat": 6,
+   "name": "吉田和仁",
+   "class": "B1",
+   "motor": "36",
+   "rank": 9,
+   "motor_2r": "40.24"
+  }
+ ],
+ "summary": {
+  "top10": {
+   "rides": 16,
+   "ex_top2": 5,
+   "top2": 10,
+   "wins": 5
+  },
+  "others": {
+   "rides": 55,
+   "ex_top2": 20,
+   "top2": 14,
+   "wins": 7
+  },
+  "all": {
+   "rides": 71,
+   "ex_top2": 25,
+   "top2": 24,
+   "wins": 12
+  }
+ }
+}
