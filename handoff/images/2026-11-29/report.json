@@ -1,0 +1,18 @@
+{
+  "prompt": "Use case: photorealistic-natural\nAsset type: vertical Instagram cover image, 4:5 portrait\nPrimary request: A photorealistic Japanese kyotei motorboat race in late afternoon on an urban riverside course, warm low sunlight and light ripples.\nScene/backdrop: subdued urban riverside in the distance, no readable signage; the upper 45% is dark, clean, and uncluttered negative space for a later title.\nSubject: One authentic Japanese kyotei racing boat, about 3 meters long, flat, low, and long relative to the racer, with a light white or pale-gray hull. It has a completely open single-seat cockpit with no canopy, roof, or windshield bubble. The racer kneels/crouches very low, leaning forward with both hands on a small steering wheel, wearing a plain full-face helmet and plain racing suit; face fully hidden. One outboard motor is mounted at the stern, throwing a large white spray plume. The boat banks into a tight left turn around one orange-and-white cylindrical turn buoy, with spray curving outward.\nStyle/medium: high-end natural sports photography, realistic scale and hydrodynamics, crisp subject with natural motion in the spray.\nComposition/framing: portrait 4:5; boat and buoy entirely in the lower half; uncluttered dark upper 45%; dynamic low telephoto viewpoint.\nLighting/mood: warm low late-afternoon sun, dramatic but realistic.\nConstraints: exactly one kyotei boat, one racer, one stern outboard motor, one cylindrical buoy; no recognizable person.\nAvoid: absolutely no text, letters, numbers, logos, brands, watermarks, signage, number plates, decals, emblems, flags, banners, lane markers with writing, or typographic shapes anywhere. Do not depict an offshore powerboat, hydroplane, F1 tunnel boat, enclosed cockpit, canopy, roof, or windshield bubble.",
+  "image_size": {
+    "width": 1122,
+    "height": 1402,
+    "unit": "px"
+  },
+  "verification": {
+    "method": "目視確認",
+    "result": "pass",
+    "details": [
+      "縦4:5の構図で、ボートとブイが下半分にあり、上部約45%が暗く整理された余白になっている。",
+      "白系の低く長い単座艇、開放型コックピット、前傾したレーサー、船尾の船外機1基、大きな水しぶき、オレンジと白の円筒形旋回ブイを確認した。",
+      "レーサーの顔は見えず、特定可能な実在人物ではない。",
+      "画像内に文字、数字、ロゴ、透かし、看板、艇番プレート、旗は見当たらない。"
+    ]
+  }
+}
